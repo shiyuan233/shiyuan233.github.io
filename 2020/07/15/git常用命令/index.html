@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://shiyuan233.github.io">
-  <title>taro小细节 | 十元233</title>
+  <title>git常用命令 | 十元233</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="学习taro的小细节">
+  <meta name="description" content="git常用命令">
 <meta property="og:type" content="article">
-<meta property="og:title" content="taro小细节">
-<meta property="og:url" content="https://shiyuan233.github.io/2020/07/14/taro%E5%B0%8F%E7%BB%86%E8%8A%82/index.html">
+<meta property="og:title" content="git常用命令">
+<meta property="og:url" content="https://shiyuan233.github.io/2020/07/15/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="十元233">
-<meta property="og:description" content="学习taro的小细节">
+<meta property="og:description" content="git常用命令">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-07-14T14:19:05.398Z">
-<meta property="article:modified_time" content="2020-07-14T14:19:05.398Z">
+<meta property="article:published_time" content="2020-07-15T03:59:55.770Z">
+<meta property="article:modified_time" content="2020-07-15T03:59:55.770Z">
 <meta property="article:author" content="十元233">
 <meta name="twitter:card" content="summary">
   
@@ -162,50 +162,56 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-taro小细节" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-git常用命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      taro小细节
+      git常用命令
     </h1>
   
 
         
-        <a href="/2020/07/14/taro%E5%B0%8F%E7%BB%86%E8%8A%82/" class="archive-article-date">
-  	<time datetime="2020-07-14T14:19:05.398Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+        <a href="/2020/07/15/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-07-15T03:59:55.770Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="学习taro的小细节"><a href="#学习taro的小细节" class="headerlink" title="学习taro的小细节"></a>学习taro的小细节</h1><a id="more"></a>
-<h2 id="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"><a href="#进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称" class="headerlink" title="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"></a>进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称</h2><h2 id="在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’"><a href="#在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’" class="headerlink" title="在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)"></a>在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)</h2><ul>
-<li>具体可搜索博客<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2>  constructor (props) {<br>  super(props)<br>  this.state = { date: new Date() }}(非必要)</li>
-<li>state可以在页面中直接写state={}<h2 id="能够在布局中掺杂js语法-和js区别"><a href="#能够在布局中掺杂js语法-和js区别" class="headerlink" title="能够在布局中掺杂js语法(和js区别)"></a>能够在布局中掺杂js语法(和js区别)</h2><h2 id="状态变量定义在state对象中，在render这个方法中可以直接引用"><a href="#状态变量定义在state对象中，在render这个方法中可以直接引用" class="headerlink" title="状态变量定义在state对象中，在render这个方法中可以直接引用"></a>状态变量定义在state对象中，在render这个方法中可以直接引用</h2></li>
-<li>通过this.state.属性名来获取你定义在state对象中的属性<h2 id="方法直接定义，如果你想调用的话也是在render中可以直接引用"><a href="#方法直接定义，如果你想调用的话也是在render中可以直接引用" class="headerlink" title="方法直接定义，如果你想调用的话也是在render中可以直接引用"></a>方法直接定义，如果你想调用的话也是在render中可以直接引用</h2></li>
-<li>onClick={this.方法名}来调用方法</li>
-<li>当你想要向方法中传递参数时，要注意：<ul>
-<li>例如henadleClick(this,参数1，参数2)一定要加上this，方法才能获取到后面传递的参数</li>
-<li>其次 如果你想拿到这个事件的事件对象，e一定要放在参数的最后<h2 id="生命周期和微信小程序的很像-可以自行参考taro文档的介绍"><a href="#生命周期和微信小程序的很像-可以自行参考taro文档的介绍" class="headerlink" title="生命周期和微信小程序的很像 可以自行参考taro文档的介绍"></a>生命周期和微信小程序的很像 可以自行参考taro文档的介绍</h2></li>
+        <h2 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h2><a id="more"></a>
+<h2 id="克隆项目"><a href="#克隆项目" class="headerlink" title="克隆项目"></a>克隆项目</h2><ul>
+<li>git clone 项目地址</li>
 </ul>
+<h2 id="拉取项目"><a href="#拉取项目" class="headerlink" title="拉取项目"></a>拉取项目</h2><ul>
+<li>git pull </li>
+</ul>
+<h2 id="上传项目-git-push"><a href="#上传项目-git-push" class="headerlink" title="上传项目 git push"></a>上传项目 git push</h2><h2 id="新建分支"><a href="#新建分支" class="headerlink" title="新建分支"></a>新建分支</h2><ul>
+<li>git branch 分支名</li>
+</ul>
+<h2 id="切换分支"><a href="#切换分支" class="headerlink" title="切换分支"></a>切换分支</h2><ul>
+<li>git checkout 分支名</li>
+</ul>
+<h2 id="配置全局的name-和email"><a href="#配置全局的name-和email" class="headerlink" title="配置全局的name 和email"></a>配置全局的name 和email</h2><ul>
+<li><p>git config –global user.name “name” </p>
 </li>
-<li><a href="https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F" target="_blank" rel="noopener">https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F</a><h2 id="修改state中的值-其实和微信小程序中修改data中的值很类似"><a href="#修改state中的值-其实和微信小程序中修改data中的值很类似" class="headerlink" title="修改state中的值 其实和微信小程序中修改data中的值很类似"></a>修改state中的值 其实和微信小程序中修改data中的值很类似</h2><ul>
-<li>一定要使用this.setState({属性名：属性值})进行更改</li>
-<li>其次，这个this.setState({})这个方法，修改值是异步进行的。意思就是说你修改了值可能不会立刻能够得到修改的值，如果你想打印出修改后的值需要使用它的第二个参数传入一个callback 如下：<ul>
-<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code></li>
-</ul>
+<li><p>git config –global user.email “email” </p>
 </li>
 </ul>
+<h2 id="生成SSH-Key"><a href="#生成SSH-Key" class="headerlink" title="生成SSH Key"></a>生成SSH Key</h2><ul>
+<li><p>ssh-keygen -t rsa -C “youremail”  </p>
+</li>
+<li><p>会在你C:\Users\Administrator.ssh的目录里有个id_rsa.pub文件 用记事本打开复制里面的值</p>
 </li>
 </ul>
-<h2 id="taro-引入webpack-bundle-analyzer可视化打包大小插件"><a href="#taro-引入webpack-bundle-analyzer可视化打包大小插件" class="headerlink" title="taro 引入webpack-bundle-analyzer可视化打包大小插件"></a>taro 引入webpack-bundle-analyzer可视化打包大小插件</h2><ul>
-<li>在小程序的mini中添加 然后走运行就可以在浏览器中看到对应模块大小<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">webpackChain (chain, webpack) &#123;</span><br><span class="line">  chain</span><br><span class="line">    .plugin(<span class="string">"analyzer"</span>)</span><br><span class="line">    .use(<span class="built_in">require</span>(<span class="string">"webpack-bundle-analyzer"</span>).BundleAnalyzerPlugin, []);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="wxParse在解析富文本的时候会加一个bindtap属性导致a标签的href失效-暂未解决"><a href="#wxParse在解析富文本的时候会加一个bindtap属性导致a标签的href失效-暂未解决" class="headerlink" title="wxParse在解析富文本的时候会加一个bindtap属性导致a标签的href失效 暂未解决"></a>wxParse在解析富文本的时候会加一个bindtap属性导致a标签的href失效 暂未解决</h2><h2 id="taro-打包时wxParse和bdParse不能自动打包进对应的小程序包中-即便是我已经引用了包中的文件"><a href="#taro-打包时wxParse和bdParse不能自动打包进对应的小程序包中-即便是我已经引用了包中的文件" class="headerlink" title="taro 打包时wxParse和bdParse不能自动打包进对应的小程序包中 即便是我已经引用了包中的文件"></a>taro 打包时wxParse和bdParse不能自动打包进对应的小程序包中 即便是我已经引用了包中的文件</h2><h1 id="缺少-Cannot-find-module-‘-babel-core’解决方法"><a href="#缺少-Cannot-find-module-‘-babel-core’解决方法" class="headerlink" title="缺少 Cannot find module ‘@babel/core’解决方法"></a>缺少 Cannot find module ‘@babel/core’解决方法</h1></li>
-<li>升级框架到npm i -g @tarojs/cli@2.1.5 <h2 id="taro-f2这个东西升级到2-1-5之后interface编译不了啊-保留字段-顺着这个我添加了ts-loader"><a href="#taro-f2这个东西升级到2-1-5之后interface编译不了啊-保留字段-顺着这个我添加了ts-loader" class="headerlink" title="taro-f2这个东西升级到2.1.5之后interface编译不了啊 保留字段 顺着这个我添加了ts-loader"></a>taro-f2这个东西升级到2.1.5之后interface编译不了啊 保留字段 顺着这个我添加了ts-loader</h2>yarn add -D ts-loader<br>下面是我加的小程序mini中的配置但是并没有什么用  （尝试把ts改成tsx也没用）因为interface这个字段是在jsx中的<br>我想的是taro好像原来就支持ts语法  目前没有解决我就把版本降到2.0.0了<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">webpackChain (chain, webpack) &#123; <span class="comment">// 模块可视化</span></span><br><span class="line">      <span class="comment">// chain</span></span><br><span class="line">      <span class="comment">//   .plugin("analyzer")</span></span><br><span class="line">      <span class="comment">//   .use(require("webpack-bundle-analyzer").BundleAnalyzerPlugin, []);</span></span><br><span class="line">      chain.merge(&#123;</span><br><span class="line">        <span class="built_in">module</span>: &#123;</span><br><span class="line">          rules: &#123;</span><br><span class="line">            myloader: &#123;</span><br><span class="line">              test: <span class="regexp">/\.ts$/</span>,</span><br><span class="line">              use: [&#123;</span><br><span class="line">                loader: <span class="string">'ts-loader'</span>,</span><br><span class="line">                options: &#123;&#125;</span><br><span class="line">              &#125;]</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;)</span><br><span class="line">    &#125;,</span><br></pre></td></tr></table></figure></li>
+<h2 id="git-merge-本地子分支"><a href="#git-merge-本地子分支" class="headerlink" title="git merge 本地子分支"></a>git merge 本地子分支</h2><ul>
+<li>当你拉去了线上主分支到本地但是你并不想直接在上面更改，而是新建一个本地分支来进行更改，当你更改完成之后需要切回到主分支然后合并子分支</li>
+</ul>
+<h2 id="git-branch-D-分支名"><a href="#git-branch-D-分支名" class="headerlink" title="git branch -D 分支名"></a>git branch -D 分支名</h2><ul>
+<li>删除指定分支</li>
 </ul>
 
       
@@ -291,7 +297,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://shiyuan233.github.io/2020/07/14/taro%E5%B0%8F%E7%BB%86%E8%8A%82/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://shiyuan233.github.io/2020/07/15/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -305,18 +311,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2020/07/14/vue%E5%B0%8F%E7%BB%86%E8%8A%82/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2020/07/15/taro1.x%E5%8D%87%E7%BA%A72.x/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          vue小细节
+          taro1.x升级2.x
         
       </div>
     </a>
   
   
-    <a href="/2020/07/14/taro%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">taro常用命令</div>
+    <a href="/2020/07/15/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">常用hexo命令</div>
       <i class="icon-circle-right"></i>
     </a>
   

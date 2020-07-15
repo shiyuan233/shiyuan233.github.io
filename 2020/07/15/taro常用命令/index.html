@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://shiyuan233.github.io">
-  <title>vue小细节 | 十元233</title>
+  <title>taro常用命令 | 十元233</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue 小细节">
+  <meta name="description" content="爱生活">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vue小细节">
-<meta property="og:url" content="https://shiyuan233.github.io/2020/07/14/vue%E5%B0%8F%E7%BB%86%E8%8A%82/index.html">
+<meta property="og:title" content="taro常用命令">
+<meta property="og:url" content="https://shiyuan233.github.io/2020/07/15/taro%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/index.html">
 <meta property="og:site_name" content="十元233">
-<meta property="og:description" content="vue 小细节">
+<meta property="og:description" content="爱生活">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-07-14T14:19:05.399Z">
-<meta property="article:modified_time" content="2020-07-14T14:19:05.399Z">
+<meta property="article:published_time" content="2020-07-15T03:59:55.774Z">
+<meta property="article:modified_time" content="2020-07-15T03:59:55.774Z">
 <meta property="article:author" content="十元233">
 <meta name="twitter:card" content="summary">
   
@@ -162,47 +162,27 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-vue小细节" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-taro常用命令" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      vue小细节
+      taro常用命令
     </h1>
   
 
         
-        <a href="/2020/07/14/vue%E5%B0%8F%E7%BB%86%E8%8A%82/" class="archive-article-date">
-  	<time datetime="2020-07-14T14:19:05.399Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-14</time>
+        <a href="/2020/07/15/taro%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" class="archive-article-date">
+  	<time datetime="2020-07-15T03:59:55.774Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-07-15</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="vue-小细节"><a href="#vue-小细节" class="headerlink" title="vue 小细节"></a>vue 小细节</h2><a id="more"></a>
-<ol>
-<li><p>v-model双向绑定原理<br> v-model 其实是一个语法糖，当你使用了一个v-model 他在内容上可以拆分为<br> <code>&lt;input v-model=&quot;price&quot;&gt;&lt;/input&gt;</code><br> v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value=”” 和 @input=””<br> <code>&lt;input :value=&quot;price&quot; @input=&quot;price=$event.target.value&quot;&gt;&lt;/input&gt;</code><br> 拆分了一个value属性</p>
-<ul>
-<li>当在input输入框输入内容时，会自动的触发input事件，更新绑定的name值。</li>
-<li>当name的值通过JavaScript改变时，会更新input的value值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// AddPrice.vue</span></span><br><span class="line"> <span class="comment">// 通过props接受绑定的value参数</span></span><br><span class="line"> &lt;template&gt;</span><br><span class="line"> 	 &lt;div @click=<span class="string">"$emit('input',value + 100 )"</span>&gt;点击加钱&lt;div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  export default &#123;</span></span><br><span class="line"><span class="regexp">    props: ['value']</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="comment">// 在父组件中调用</span></span><br><span class="line">&lt;add-price v-model=<span class="string">"price"</span>&gt;&lt;<span class="regexp">/add-price&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>input的checked分为单选和多选</p>
-<ul>
-<li>单选的时候用true和false来进行判断是否选中就好了</li>
-<li>多选的话给他个value值然后通过v-model绑定的数组内，是否有这个value值进行判断是否选中</li>
-</ul>
-</li>
-<li><p>element-ui 的upload组件上传图片时如果带有cookie头凭证信息需要设置属性with-credentials=true （支持发送 cookie 凭证信息）</p>
-</li>
-<li><p>element-ui 的select组件v-model接收的值是一个Array类型的值，默认值也要设定为 []，不然就会报错</p>
-</li>
-</ol>
-
+        
       
 
       
@@ -286,7 +266,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://shiyuan233.github.io/2020/07/14/vue%E5%B0%8F%E7%BB%86%E8%8A%82/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://shiyuan233.github.io/2020/07/15/taro%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -300,8 +280,17 @@
   
 <nav id="article-nav">
   
+    <a href="/2020/07/15/vue%E5%B0%8F%E7%BB%86%E8%8A%82/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          vue小细节
+        
+      </div>
+    </a>
   
-    <a href="/2020/07/14/taro%E5%B0%8F%E7%BB%86%E8%8A%82/" id="article-nav-older" class="article-nav-link-wrap">
+  
+    <a href="/2020/07/15/taro%E5%B0%8F%E7%BB%86%E8%8A%82/" id="article-nav-older" class="article-nav-link-wrap">
       <div class="article-nav-title">taro小细节</div>
       <i class="icon-circle-right"></i>
     </a>
