@@ -3491,7 +3491,7 @@ pre .id {
         position: absolute;
         width: 100%;
         z-index: 2;
-        background: #4d4d4d
+        /* background: #4d4d4d */
     }
 
     #mobile-nav #header {
