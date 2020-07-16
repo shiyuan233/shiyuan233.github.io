@@ -213,6 +213,15 @@
 <h2 id="git-branch-D-分支名"><a href="#git-branch-D-分支名" class="headerlink" title="git branch -D 分支名"></a>git branch -D 分支名</h2><ul>
 <li>删除指定分支</li>
 </ul>
+<h1 id="如何指定上传代码到某个仓库？"><a href="#如何指定上传代码到某个仓库？" class="headerlink" title="如何指定上传代码到某个仓库？"></a>如何指定上传代码到某个仓库？</h1><ol>
+<li>在你的文件夹中 执行 git init 命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure></li>
+<li>将所有文件丢进文件夹中，然后<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure></li>
+<li>将上一步add的文件commit到仓库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git  commit -m <span class="string">"提交的说明注释"</span></span><br></pre></td></tr></table></figure></li>
+<li>将本地仓库关联到的仓库上<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin https://github.com/shiyuan233.github.io/</span><br></pre></td></tr></table></figure></li>
+<li>使用pull命令<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin master</span><br></pre></td></tr></table></figure></li>
+<li>将本地仓库的文件上传到GitHub远程仓库<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -u origin master</span><br></pre></td></tr></table></figure></li>
+<li>如果报错是因为你仓库可能没有进行初始化 少了README.md文件</li>
+</ol>
 
       
 
