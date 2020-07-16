@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="https://shiyuan233.github.io">
   <title>vue小细节 | 十元233</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="vue 小细节">
+  <meta name="description" content="v-model双向绑定原理 v-model 其实是一个语法糖，当你使用了一个v-model 他在内容上可以拆分为 &lt;input v-model&#x3D;&quot;price&quot;&gt;&lt;&#x2F;input&gt; v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value&#x3D;”” 和 @input&#x3D;”” &lt;input :value&#x3D;&quot;price&amp;quo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="vue小细节">
 <meta property="og:url" content="https://shiyuan233.github.io/2020/07/15/vue%E5%B0%8F%E7%BB%86%E8%8A%82/index.html">
 <meta property="og:site_name" content="十元233">
-<meta property="og:description" content="vue 小细节">
+<meta property="og:description" content="v-model双向绑定原理 v-model 其实是一个语法糖，当你使用了一个v-model 他在内容上可以拆分为 &lt;input v-model&#x3D;&quot;price&quot;&gt;&lt;&#x2F;input&gt; v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value&#x3D;”” 和 @input&#x3D;”” &lt;input :value&#x3D;&quot;price&amp;quo">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-07-15T03:59:55.775Z">
 <meta property="article:modified_time" content="2020-07-15T03:59:55.775Z">
@@ -182,13 +182,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="vue-小细节"><a href="#vue-小细节" class="headerlink" title="vue 小细节"></a>vue 小细节</h2><a id="more"></a>
-<ol>
+        <ol>
 <li><p>v-model双向绑定原理<br> v-model 其实是一个语法糖，当你使用了一个v-model 他在内容上可以拆分为<br> <code>&lt;input v-model=&quot;price&quot;&gt;&lt;/input&gt;</code><br> v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value=”” 和 @input=””<br> <code>&lt;input :value=&quot;price&quot; @input=&quot;price=$event.target.value&quot;&gt;&lt;/input&gt;</code><br> 拆分了一个value属性</p>
 <ul>
 <li>当在input输入框输入内容时，会自动的触发input事件，更新绑定的name值。</li>
 <li>当name的值通过JavaScript改变时，会更新input的value值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// AddPrice.vue</span></span><br><span class="line"> <span class="comment">// 通过props接受绑定的value参数</span></span><br><span class="line"> &lt;template&gt;</span><br><span class="line"> 	 &lt;div @click=<span class="string">"$emit('input',value + 100 )"</span>&gt;点击加钱&lt;div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  export default &#123;</span></span><br><span class="line"><span class="regexp">    props: ['value']</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="comment">// 在父组件中调用</span></span><br><span class="line">&lt;add-price v-model=<span class="string">"price"</span>&gt;&lt;<span class="regexp">/add-price&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
+<a id="more"></a></li>
 </ul>
 </li>
 <li><p>input的checked分为单选和多选</p>

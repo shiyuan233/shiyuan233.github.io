@@ -182,7 +182,11 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="vue-小细节"><a href="#vue-小细节" class="headerlink" title="vue 小细节"></a>vue 小细节</h2>
+        <ol>
+<li><p>v-model双向绑定原理<br> v-model 其实是一个语法糖，当你使用了一个v-model 他在内容上可以拆分为<br> <code>&lt;input v-model=&quot;price&quot;&gt;&lt;/input&gt;</code><br> v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value=”” 和 @input=””<br> <code>&lt;input :value=&quot;price&quot; @input=&quot;price=$event.target.value&quot;&gt;&lt;/input&gt;</code><br> 拆分了一个value属性</p>
+<ul>
+<li>当在input输入框输入内容时，会自动的触发input事件，更新绑定的name值。</li>
+<li>当name的值通过JavaScript改变时，会更新input的value值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// AddPrice.vue</span></span><br><span class="line"> <span class="comment">// 通过props接受绑定的value参数</span></span><br><span class="line"> &lt;template&gt;</span><br><span class="line"> 	 &lt;div @click=<span class="string">"$emit('input',value + 100 )"</span>&gt;点击加钱&lt;div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  export default &#123;</span></span><br><span class="line"><span class="regexp">    props: ['value']</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="comment">// 在父组件中调用</span></span><br><span class="line">&lt;add-price v-model=<span class="string">"price"</span>&gt;&lt;<span class="regexp">/add-price&gt;</span></span><br></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2020/07/15/vue%E5%B0%8F%E7%BB%86%E8%8A%82/#more">more >></a>
         
@@ -309,7 +313,20 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="学习taro的小细节"><a href="#学习taro的小细节" class="headerlink" title="学习taro的小细节"></a>学习taro的小细节</h1>
+        <h2 id="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"><a href="#进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称" class="headerlink" title="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"></a>进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称</h2><h2 id="在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’"><a href="#在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’" class="headerlink" title="在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)"></a>在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)</h2><ul>
+<li>具体可搜索博客<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2>  constructor (props) {<br>  super(props)<br>  this.state = { date: new Date() }}(非必要)</li>
+<li>state可以在页面中直接写state={}<h2 id="能够在布局中掺杂js语法-和js区别"><a href="#能够在布局中掺杂js语法-和js区别" class="headerlink" title="能够在布局中掺杂js语法(和js区别)"></a>能够在布局中掺杂js语法(和js区别)</h2><h2 id="状态变量定义在state对象中，在render这个方法中可以直接引用"><a href="#状态变量定义在state对象中，在render这个方法中可以直接引用" class="headerlink" title="状态变量定义在state对象中，在render这个方法中可以直接引用"></a>状态变量定义在state对象中，在render这个方法中可以直接引用</h2></li>
+<li>通过this.state.属性名来获取你定义在state对象中的属性<h2 id="方法直接定义，如果你想调用的话也是在render中可以直接引用"><a href="#方法直接定义，如果你想调用的话也是在render中可以直接引用" class="headerlink" title="方法直接定义，如果你想调用的话也是在render中可以直接引用"></a>方法直接定义，如果你想调用的话也是在render中可以直接引用</h2></li>
+<li>onClick={this.方法名}来调用方法</li>
+<li>当你想要向方法中传递参数时，要注意：<ul>
+<li>例如henadleClick(this,参数1，参数2)一定要加上this，方法才能获取到后面传递的参数</li>
+<li>其次 如果你想拿到这个事件的事件对象，e一定要放在参数的最后<h2 id="生命周期和微信小程序的很像-可以自行参考taro文档的介绍"><a href="#生命周期和微信小程序的很像-可以自行参考taro文档的介绍" class="headerlink" title="生命周期和微信小程序的很像 可以自行参考taro文档的介绍"></a>生命周期和微信小程序的很像 可以自行参考taro文档的介绍</h2></li>
+</ul>
+</li>
+<li><a href="https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F" target="_blank" rel="noopener">https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F</a><h2 id="修改state中的值-其实和微信小程序中修改data中的值很类似"><a href="#修改state中的值-其实和微信小程序中修改data中的值很类似" class="headerlink" title="修改state中的值 其实和微信小程序中修改data中的值很类似"></a>修改state中的值 其实和微信小程序中修改data中的值很类似</h2><ul>
+<li>一定要使用this.setState({属性名：属性值})进行更改</li>
+<li>其次，这个this.setState({})这个方法，修改值是异步进行的。意思就是说你修改了值可能不会立刻能够得到修改的值，如果你想打印出修改后的值需要使用它的第二个参数传入一个callback 如下：<ul>
+<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code>
         
           <a class="article-more-a" href="/2020/07/15/taro%E5%B0%8F%E7%BB%86%E8%8A%82/#more">more >></a>
         
@@ -374,7 +391,12 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="npm小知识"><a href="#npm小知识" class="headerlink" title="npm小知识"></a>npm小知识</h2>
+        <h2 id="npm-有时候会堆栈溢出-是啥原因呢？"><a href="#npm-有时候会堆栈溢出-是啥原因呢？" class="headerlink" title="npm 有时候会堆栈溢出 是啥原因呢？"></a>npm 有时候会堆栈溢出 是啥原因呢？</h2><ul>
+<li>npm版本问题 降级到3.xx就好了<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install npm@3 -g</span><br></pre></td></tr></table></figure>
+<h2 id="D和-S区别"><a href="#D和-S区别" class="headerlink" title="-D和-S区别"></a>-D和-S区别</h2></li>
+<li>-S线上环境</li>
+<li>-D生产环境也就是本地运行环境</li>
+<li>
         
           <a class="article-more-a" href="/2020/07/15/npm%E5%B0%8F%E7%9F%A5%E8%AF%86/#more">more >></a>
         
@@ -571,7 +593,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="记录一下常用命令-加深记忆"><a href="#记录一下常用命令-加深记忆" class="headerlink" title="记录一下常用命令 加深记忆"></a>记录一下常用命令 加深记忆</h3>
+        <h3 id="记录一下常用命令-加深记忆"><a href="#记录一下常用命令-加深记忆" class="headerlink" title="记录一下常用命令 加深记忆"></a>记录一下常用命令 加深记忆</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">hexo new <span class="string">"postName"</span> <span class="comment">#新建文章</span></span><br><span class="line">hexo new page <span class="string">"pageName"</span> <span class="comment">#新建页面</span></span><br><span class="line">hexo generate <span class="comment">#生成静态页面至public目录</span></span><br><span class="line">hexo server <span class="comment">#开启预览访问端口（默认端口4000，'ctrl + c'关闭server）</span></span><br><span class="line">hexo deploy <span class="comment">#部署到GitHub</span></span><br><span class="line">hexo <span class="built_in">help</span>  <span class="comment"># 查看帮助</span></span><br><span class="line">hexo version  <span class="comment">#查看Hexo的版本</span></span><br></pre></td></tr></table></figure>
         
           <a class="article-more-a" href="/2020/07/15/hexo%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/#more">more >></a>
         

@@ -185,32 +185,41 @@
         <h2 id="tarojs-cli-升级"><a href="#tarojs-cli-升级" class="headerlink" title="tarojs/cli 升级"></a>tarojs/cli 升级</h2><a id="more"></a>
 <ol>
 <li><p>首先升级脚手架</p>
-<h1 id="使用-Taro-自己"><a href="#使用-Taro-自己" class="headerlink" title="使用 Taro 自己"></a>使用 Taro 自己</h1><p> $ taro update self 2.0.0</p>
-<h1 id="如果你使用-NPM"><a href="#如果你使用-NPM" class="headerlink" title="如果你使用 NPM"></a>如果你使用 NPM</h1><p> $ npm update -g @tarojs/cli@2.0.0</p>
-<h1 id="如果你使用-Yarn"><a href="#如果你使用-Yarn" class="headerlink" title="如果你使用 Yarn"></a>如果你使用 Yarn</h1><p> $ yarn global upgrade @tarojs/cli@2.0.0</p>
-</li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 使用 Taro 自己</span></span><br><span class="line">$ taro update self 2.0.0</span><br><span class="line"><span class="comment"># 如果你使用 NPM</span></span><br><span class="line">$ npm update -g @tarojs/cli@2.0.0</span><br><span class="line"><span class="comment"># 如果你使用 Yarn</span></span><br><span class="line">$ yarn global upgrade @tarojs/cli@2.0.0</span><br></pre></td></tr></table></figure></li>
 <li><p>之后在你的项目目录里运行以下命令来升级依赖：<br> $ taro update project 2.0.0</p>
 </li>
 <li><p>安装 @tarojs/mini-runner 依赖</p>
-<h1 id="如果你使用-NPM-1"><a href="#如果你使用-NPM-1" class="headerlink" title="如果你使用 NPM"></a>如果你使用 NPM</h1><p> $ npm install –save-dev @tarojs/mini-runner@2.0.0</p>
-<h1 id="如果你使用-Yarn-1"><a href="#如果你使用-Yarn-1" class="headerlink" title="如果你使用 Yarn"></a>如果你使用 Yarn</h1><p> $ yarn add -D @tarojs/mini-runner@2.0.0</p>
+<h1 id="如果你使用-NPM"><a href="#如果你使用-NPM" class="headerlink" title="如果你使用 NPM"></a>如果你使用 NPM</h1><p> $ npm install –save-dev @tarojs/mini-runner@2.0.0</p>
+<h1 id="如果你使用-Yarn"><a href="#如果你使用-Yarn" class="headerlink" title="如果你使用 Yarn"></a>如果你使用 Yarn</h1><p> $ yarn add -D @tarojs/mini-runner@2.0.0</p>
 </li>
 <li><p>调整全局配置文件index.js<br> babel、csso、uglify 等配置从 plugins 配置中移出来<br> 小程序配置名称由weapp改成mini</p>
 </li>
 <li><p>异步编程调整<br> Taro 2.0 中开启 async functions 支持不再需要安装 @tarojs/async-await，而是直接通过 babel 插件来获得支持。<br> 可以先删除@tarojs/async-await 包</p>
-<h1 id="如果你使用-NPM-2"><a href="#如果你使用-NPM-2" class="headerlink" title="如果你使用 NPM"></a>如果你使用 NPM</h1><p> $ npm uninstall @tarojs/async-await</p>
-<h1 id="如果你使用-Yarn-2"><a href="#如果你使用-Yarn-2" class="headerlink" title="如果你使用 Yarn"></a>如果你使用 Yarn</h1><p> $ yarn remove @tarojs/async-await</p>
-<p> 在你的 App.jsx/tsx 里删除 import ‘@tarojs/async-await’。</p>
-</li>
-<li><p>在项目根目录下安装包 babel-plugin-transform-runtime 和 babel-runtime。</p>
-<h1 id="如果你使用-NPM-3"><a href="#如果你使用-NPM-3" class="headerlink" title="如果你使用 NPM"></a>如果你使用 NPM</h1><p>  npm install –save-dev babel-plugin-transform-runtime<br> $ npm install –save babel-runtime</p>
-<h1 id="如果你使用-Yarn-3"><a href="#如果你使用-Yarn-3" class="headerlink" title="如果你使用 Yarn"></a>如果你使用 Yarn</h1><p> $ yarn add -D babel-plugin-transform-runtime<br> $ yarn add babel-runtime</p>
-</li>
-<li><p>随后修改项目 babel 配置，配置插件 babel-plugin-transform-runtime。</p>
-<p> babel: {<br>sourceMap: true,<br>presets: [[‘env’, { modules: false }]],<br>plugins: [<br> ‘transform-decorators-legacy’,<br> ‘transform-class-properties’,<br> ‘transform-object-rest-spread’,<br> [‘transform-runtime’, {<br>   “helpers”: false,<br>   “polyfill”: false,<br>   “regenerator”: true,<br>   “moduleName”: ‘babel-runtime’<br> }]<br>]<br>}</p>
 </li>
 </ol>
-<h1 id="end"><a href="#end" class="headerlink" title="end"></a>end</h1>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果你使用 NPM</span></span><br><span class="line">$ npm uninstall @tarojs/async-await</span><br><span class="line"><span class="comment"># 如果你使用 Yarn</span></span><br><span class="line">$ yarn remove @tarojs/async-await</span><br></pre></td></tr></table></figure>
+<pre><code>在你的 App.jsx/tsx 里删除 import &apos;@tarojs/async-await&apos;。</code></pre><ol start="6">
+<li>在项目根目录下安装包 babel-plugin-transform-runtime 和 babel-runtime。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 如果你使用 NPM</span></span><br><span class="line"></span><br><span class="line">     npm install --save-dev babel-plugin-transform-runtime</span><br><span class="line">    $ npm install --save babel-runtime</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 如果你使用 Yarn</span></span><br><span class="line"></span><br><span class="line">    $ yarn add -D babel-plugin-transform-runtime</span><br><span class="line">    $ yarn add babel-runtime</span><br></pre></td></tr></table></figure></li>
+<li>随后修改项目 babel 配置，配置插件 babel-plugin-transform-runtime。<pre><code class="javascript">babel: {
+sourceMap: <span class="literal">true</span>,
+presets: [[<span class="string">'env'</span>, { <span class="attr">modules</span>: <span class="literal">false</span> }]],
+plugins: [
+ <span class="string">'transform-decorators-legacy'</span>,
+ <span class="string">'transform-class-properties'</span>,
+ <span class="string">'transform-object-rest-spread'</span>,
+ [<span class="string">'transform-runtime'</span>, {
+   <span class="string">"helpers"</span>: <span class="literal">false</span>,
+   <span class="string">"polyfill"</span>: <span class="literal">false</span>,
+   <span class="string">"regenerator"</span>: <span class="literal">true</span>,
+   <span class="string">"moduleName"</span>: <span class="string">'babel-runtime'</span>
+ }]
+]
+}
+
+</code></pre>
+</li>
+</ol>
+<pre><code></code></pre>
       
 
       
