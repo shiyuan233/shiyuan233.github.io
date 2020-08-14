@@ -369,7 +369,8 @@ body {
     color: #333;
     /* background-color: #fff; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('assets/back.png') no-repeat 0% 0%/ cover!important;
+    url('assets/back.png') no-repeat 50% 0%/ cover!important;
+    
     min-height: 100%
 }
 
@@ -932,7 +933,7 @@ html {
 
 .left-col {
     /* background: #fff; */
-    background: url('assets/left-col.png') no-repeat 79% 20%/ cover transparent;
+    /* background: url('assets/left-col.png') no-repeat 79% 20%/ cover transparent; */
     width: 300px;
     position: fixed;
     opacity: 1;
@@ -961,7 +962,7 @@ html {
 }
 
 .left-col #header a {
-    color: #fff
+    color: #ff2323
 }
 
 .left-col #header a:hover {
@@ -1946,10 +1947,10 @@ pre .id {
 
 .tools-col .tools-section .search-wrap .search-ipt {
     width: 310px;
-    color: #fff;
+    color: green;
     background: none;
     border: none;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
     font-family: Roboto, serif
 }
 
@@ -1957,7 +1958,7 @@ pre .id {
     position: absolute;
     right: 0;
     top: 7px;
-    color: #fff;
+    color: #000;
     cursor: pointer
 }
 
@@ -2081,23 +2082,23 @@ pre .id {
     white-space: nowrap;
     text-overflow: ellipsis;
     display: block;
-    color: #fffff8;
+    color: rgb(64, 116, 52);
     text-shadow: 1px 1px rgba(77, 77, 77, .25)
 }
 
 .tools-col .tools-section .search-ul .search-title .icon {
     margin-right: 10px;
-    color: #fffdd8
+    color: rgb(222, 156, 83)
 }
 
 .tools-col .tools-section .search-ul .search-title:hover {
-    color: #fff
+    color: rgb(222, 156, 83)
 }
 
 .tools-col .tools-section .search-ul .search-tag,
 .tools-col .tools-section .search-ul .search-time {
     font-size: 12px;
-    color: #fffdd8;
+    color: #000;
     margin-right: 10px
 }
 
@@ -3020,7 +3021,7 @@ pre .id {
     left: 50%;
     pointer-events: none;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%,-50%)
 }
 
 .tooltip-top .tooltip:hover:after {
@@ -3134,7 +3135,7 @@ pre .id {
     #container,
     body,
     html {
-        height: auto;
+        /* height: auto; */
         overflow-x: hidden;
         overflow-y: auto
     }
@@ -3550,12 +3551,12 @@ pre .id {
         justify-content: space-around;
         position: relative;
         z-index: 1;
-        border: 1px solid #a0a0a0;
+        border: 1px solid #F9957F;
         border-radius: 3px
     }
 
     .header-menu li {
-        border-left: 1px solid #a0a0a0
+        border-left: 1px solid #EF33B1
     }
 
     .header-menu li:first-child {
@@ -3572,12 +3573,12 @@ pre .id {
         text-overflow: ellipsis;
         white-space: nowrap;
         display: block;
-        color: #a0a0a0
+        color: #EF33B1
     }
 
     .header-menu li a.active {
-        color: #eaeaea;
-        background: #a0a0a0
+        color: #000;
+        background: #fff
     }
 
     .profilepic {
@@ -4293,4 +4294,53 @@ a.pswp__share--download:hover {
 .pswp__error-msg a {
     color: #ccc;
     text-decoration: underline
+}
+/* 以下为分类样式 */
+.category-count {
+	text-align:center;
+	line-height:3;
+	font-size:18px;
+	font-weight:bold;
+}
+.category-list {
+	text-align:center;
+	padding:20px
+}
+.category-list li.category-list-item {
+	display:inline-block;
+	margin:0 1em .5em 0;
+	padding:4px;
+	border:1px solid #aaaaaa;
+	font-size:1.2rem
+}
+.category-list li.category-list-item:hover {
+	background:rgba(204,204,204,0.3)
+}
+.tag-cloud {
+	text-align:center;
+	padding:20px
+}
+.tag-cloud a {
+	margin:0 20px;
+	word-break:keep-all;
+	position:relative
+}
+.tag-cloud a:hover::before {
+	width:100%;
+	left:0;
+	right:auto
+}
+.tag-cloud a::before {
+	content:"";
+	position:absolute;
+	width:0;
+	right:0;
+	bottom:0;
+	height:2px;
+	background:#08c;
+	-webkit-transition:width .3s ease;
+	transition:width .3s ease
+}
+.post-count{
+    color: #009a61;
 }
