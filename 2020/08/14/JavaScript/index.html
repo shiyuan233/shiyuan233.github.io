@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="https://shiyuan233.github.io">
   <title>JavaScript注意点 | 十元233的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="在全局变量中使用var定义的和let定义的变量有何区别？首先知道var可以将变量进行变量提升 var定义的变量都在window中 可以使用window.变量名取值 但是let定义的变量不可以使用window进行取值 因为var定义的变量提升到了global环境中即全局环境 而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值">
+  <meta name="description" content="在全局变量中使用var定义的和let定义的变量有何区别？首先知道var可以将变量进行变量提升 var定义的变量都在window中 可以使用window.变量名取值 但是let定义的变量不可以使用window进行取值 因为var定义的变量提升到了global环境中即全局环境 而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值构造函数中声明的方法和">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JavaScript注意点">
 <meta property="og:url" content="https://shiyuan233.github.io/2020/08/14/JavaScript/index.html">
 <meta property="og:site_name" content="十元233的博客">
-<meta property="og:description" content="在全局变量中使用var定义的和let定义的变量有何区别？首先知道var可以将变量进行变量提升 var定义的变量都在window中 可以使用window.变量名取值 但是let定义的变量不可以使用window进行取值 因为var定义的变量提升到了global环境中即全局环境 而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值">
+<meta property="og:description" content="在全局变量中使用var定义的和let定义的变量有何区别？首先知道var可以将变量进行变量提升 var定义的变量都在window中 可以使用window.变量名取值 但是let定义的变量不可以使用window进行取值 因为var定义的变量提升到了global环境中即全局环境 而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值构造函数中声明的方法和">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-14T06:36:54.000Z">
 <meta property="article:modified_time" content="2020-08-14T06:36:54.000Z">
@@ -197,7 +197,7 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-keyboard-o"></i>
       <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">125字</span>
+      <span class="post-count">286字</span>
     </span>
   </span>
 
@@ -230,16 +230,16 @@
 var定义的变量都在window中 可以使用window.变量名取值
 但是let定义的变量不可以使用window进行取值
 因为var定义的变量提升到了global环境中即全局环境
-而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值</code></pre>
+而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值</code></pre><h2 id="构造函数中声明的方法和在原型中声明的方法的区别"><a href="#构造函数中声明的方法和在原型中声明的方法的区别" class="headerlink" title="构造函数中声明的方法和在原型中声明的方法的区别"></a>构造函数中声明的方法和在原型中声明的方法的区别</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name=name;</span><br><span class="line">        <span class="keyword">this</span>.age=age</span><br><span class="line">        <span class="keyword">this</span>.sayName=<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> person1 =<span class="keyword">new</span> Person(<span class="string">'小明'</span>，<span class="number">5</span>)</span><br><span class="line"><span class="keyword">var</span> perosn2=<span class="keyword">new</span> Perosn(<span class="string">'小慧'</span>，<span class="number">6</span>)</span><br><span class="line"><span class="built_in">console</span>.log(person1.sayName==perosn2.sayName) <span class="comment">//false 每次实例化会重新创建该属性方法造成没必要的浪费</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">new_Person</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.age=age;</span><br><span class="line">&#125;</span><br><span class="line">new_Person.prototype.sayName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> new_Person1=<span class="keyword">new</span> new_Person(<span class="string">'隔壁老王'</span><span class="number">30</span>)</span><br><span class="line"><span class="keyword">var</span> new_Person2=<span class="keyword">new</span> new_Person(<span class="string">'老黄'</span>，<span class="number">32</span>)</span><br><span class="line"><span class="built_in">console</span>.log(new_Person1.sayName==new_person2.sayName) <span class="comment">//true 通过原型对象创建的方法是所有实例通用的 且仅在初始化时创建</span></span><br></pre></td></tr></table></figure>
     
 
-    
+    <!-- 
     <h2 id="在全局变量中使用var定义的和let定义的变量有何区别？"><a href="#在全局变量中使用var定义的和let定义的变量有何区别？" class="headerlink" title="在全局变量中使用var定义的和let定义的变量有何区别？"></a>在全局变量中使用var定义的和let定义的变量有何区别？</h2><pre><code>首先知道var可以将变量进行变量提升
 var定义的变量都在window中 可以使用window.变量名取值
 但是let定义的变量不可以使用window进行取值
 因为var定义的变量提升到了global环境中即全局环境
-而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值</code></pre>
-    
+而let是在global中定义的所以没有经过window这一层，所以无法使用window.属性名进行取值</code></pre><h2 id="构造函数中声明的方法和在原型中声明的方法的区别"><a href="#构造函数中声明的方法和在原型中声明的方法的区别" class="headerlink" title="构造函数中声明的方法和在原型中声明的方法的区别"></a>构造函数中声明的方法和在原型中声明的方法的区别</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">Person</span> (<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.name=name;</span><br><span class="line">        <span class="keyword">this</span>.age=age</span><br><span class="line">        <span class="keyword">this</span>.sayName=<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</span><br><span class="line">            <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> person1 =<span class="keyword">new</span> Person(<span class="string">'小明'</span>，<span class="number">5</span>)</span><br><span class="line"><span class="keyword">var</span> perosn2=<span class="keyword">new</span> Perosn(<span class="string">'小慧'</span>，<span class="number">6</span>)</span><br><span class="line"><span class="built_in">console</span>.log(person1.sayName==perosn2.sayName) <span class="comment">//false 每次实例化会重新创建该属性方法造成没必要的浪费</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">new_Person</span>(<span class="params">name,age</span>)</span>&#123;</span><br><span class="line">    <span class="keyword">this</span>.name=name;</span><br><span class="line">    <span class="keyword">this</span>.age=age;</span><br><span class="line">&#125;</span><br><span class="line">new_Person.prototype.sayName=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">this</span>.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> new_Person1=<span class="keyword">new</span> new_Person(<span class="string">'隔壁老王'</span><span class="number">30</span>)</span><br><span class="line"><span class="keyword">var</span> new_Person2=<span class="keyword">new</span> new_Person(<span class="string">'老黄'</span>，<span class="number">32</span>)</span><br><span class="line"><span class="built_in">console</span>.log(new_Person1.sayName==new_person2.sayName) <span class="comment">//true 通过原型对象创建的方法是所有实例通用的 且仅在初始化时创建</span></span><br></pre></td></tr></table></figure>
+     -->
 
     
     <div class="page-reward">
@@ -403,6 +403,7 @@ var定义的变量都在window中 可以使用window.变量名取值
 <noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
 </div>
 <!-- City版安装代码已完成 -->
+
 
 
 
