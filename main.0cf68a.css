@@ -369,7 +369,7 @@ body {
     color: #333;
     /* background-color: #fff; */
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), 
-    url('assets/back.png') no-repeat 50% 0%/ cover!important;
+    url('https://shiyuan233.coding.net/p/pictureWarehose/d/pictureWarehouse/git/raw/master/assets/img/back.png') no-repeat 50% 0%/ cover!important;
     
     min-height: 100%
 }
