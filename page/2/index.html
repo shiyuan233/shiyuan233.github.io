@@ -174,6 +174,125 @@
           <div id="js-content" class="content-ll">
             
 
+<article id="post-html" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class=" article-header">
+  
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2020/08/14/html/">html</a>
+    </h1>
+  
+
+  
+  <a href="/2020/08/14/html/" class="archive-article-date">
+  	<time datetime="2020-08-14T06:36:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-14</time>
+</a>
+  <!-- 需要添加的位置 -->
+  <!-- 开始添加字数统计-->
+  
+  <div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-keyboard-o"></i>
+      <span class="post-meta-item-text"> 字数统计: </span>
+      <span class="post-count">383字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="fa fa-hourglass-half"></i>
+      <span class="post-meta-item-text"> 阅读时长: </span>
+      <span class="post-count">1分</span>
+    </span>
+  </span>
+</div>
+  
+  <!-- 添加完成 -->
+
+  
+  <!-- 添加代码 -->
+  
+
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    
+    <p>今天突然想到如何实现满屏的页面布局 觉得很帅气就去了解了一下<br>主要是用swiper.js可以实现  例如夸克浏览器的官网<br>也可以使用fullpage.js实现</p>
+<h3 id="Html中什么是混合模式与标准模式？"><a href="#Html中什么是混合模式与标准模式？" class="headerlink" title="Html中什么是混合模式与标准模式？"></a>Html中什么是混合模式与标准模式？</h3><p>通过html标签前的&lt;!doctype&gt;进行设置。</p>
+<!doctype><p>让浏览器解析器知道应该用哪个规范来解析文档。</p>
+<p>如果在文档开始处没有发现文档类型声明(即&lt;!doctype&gt;)，则所有浏览器都会默认开启混杂模式。</p>
+<h3 id="什么是单页面和多页面模式"><a href="#什么是单页面和多页面模式" class="headerlink" title="什么是单页面和多页面模式"></a>什么是单页面和多页面模式</h3><h4 id="单页面："><a href="#单页面：" class="headerlink" title="单页面："></a>单页面：</h4><p>页面主体不变 主要是内部的模块变化 js/css/img等公用文件只在加载初始页面时加载，更换页面内容前后无需重新加载</p>
+<h4 id="好处："><a href="#好处：" class="headerlink" title="好处："></a>好处：</h4><p>页面片段间切换较快，用户体验好，因为初次已经加载好相关文件。但是初次加载页面时需要调整优化，因为加载文件较多</p>
+<h4 id="多页面："><a href="#多页面：" class="headerlink" title="多页面："></a>多页面：</h4><p>多个完整页面 例如page1.html、page2.html等    跳转页面前后，js/css/img等公用文件重新加载<br>好处： 适用于高度追求高度支持搜索引擎的应用<br>坏处： 如果单个页面加载的文件相对较大（多），页面切换加载会很慢</p>
+<h3 id="一般移动端用的插件是zepto-js是一款移动端的jq"><a href="#一般移动端用的插件是zepto-js是一款移动端的jq" class="headerlink" title="一般移动端用的插件是zepto.js是一款移动端的jq"></a>一般移动端用的插件是zepto.js是一款移动端的jq</h3><h3 id="移动端还需要处理300毫秒点击延迟的问题，用的是fastclick-js"><a href="#移动端还需要处理300毫秒点击延迟的问题，用的是fastclick-js" class="headerlink" title="移动端还需要处理300毫秒点击延迟的问题，用的是fastclick.js"></a>移动端还需要处理300毫秒点击延迟的问题，用的是fastclick.js</h3>
+    
+
+    <!-- 
+    <p>今天突然想到如何实现满屏的页面布局 觉得很帅气就去了解了一下<br>主要是用swiper.js可以实现  例如夸克浏览器的官网<br>也可以使用fullpage.js实现</p>
+<h3 id="Html中什么是混合模式与标准模式？"><a href="#Html中什么是混合模式与标准模式？" class="headerlink" title="Html中什么是混合模式与标准模式？"></a>Html中什么是混合模式与标准模式？</h3><p>通过html标签前的&lt;!doctype&gt;进行设置。</p>
+<!doctype><p>让浏览器解析器知道应该用哪个规范来解析文档。</p>
+<p>如果在文档开始处没有发现文档类型声明(即&lt;!doctype&gt;)，则所有浏览器都会默认开启混杂模式。</p>
+<h3 id="什么是单页面和多页面模式"><a href="#什么是单页面和多页面模式" class="headerlink" title="什么是单页面和多页面模式"></a>什么是单页面和多页面模式</h3><h4 id="单页面："><a href="#单页面：" class="headerlink" title="单页面："></a>单页面：</h4><p>页面主体不变 主要是内部的模块变化 js/css/img等公用文件只在加载初始页面时加载，更换页面内容前后无需重新加载</p>
+<h4 id="好处："><a href="#好处：" class="headerlink" title="好处："></a>好处：</h4><p>页面片段间切换较快，用户体验好，因为初次已经加载好相关文件。但是初次加载页面时需要调整优化，因为加载文件较多</p>
+<h4 id="多页面："><a href="#多页面：" class="headerlink" title="多页面："></a>多页面：</h4><p>多个完整页面 例如page1.html、page2.html等    跳转页面前后，js/css/img等公用文件重新加载<br>好处： 适用于高度追求高度支持搜索引擎的应用<br>坏处： 如果单个页面加载的文件相对较大（多），页面切换加载会很慢</p>
+<h3 id="一般移动端用的插件是zepto-js是一款移动端的jq"><a href="#一般移动端用的插件是zepto-js是一款移动端的jq" class="headerlink" title="一般移动端用的插件是zepto.js是一款移动端的jq"></a>一般移动端用的插件是zepto.js是一款移动端的jq</h3><h3 id="移动端还需要处理300毫秒点击延迟的问题，用的是fastclick-js"><a href="#移动端还需要处理300毫秒点击延迟的问题，用的是fastclick-js" class="headerlink" title="移动端还需要处理300毫秒点击延迟的问题，用的是fastclick.js"></a>移动端还需要处理300毫秒点击延迟的问题，用的是fastclick.js</h3>
+     -->
+
+    
+  </div>
+  <div class="article-info article-info-index">
+    
+    
+    
+	<div class="article-category tagcloud">
+		<i class="icon-book icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="/categories/HTML//" class="article-tag-list-link color5">HTML</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+
+    
+    <p class="article-more-link">
+      <a class="article-more-a" href="/2020/08/14/html/">展开全文 >></a>
+    </p>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
 <article id="post-npm小知识" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -1285,555 +1404,6 @@ var定义的变量都在window中 可以使用window.变量名取值
 
 
 
-<article id="post-vue项目规范" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class=" article-header">
-  
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/08/14/vue%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">Vue项目规范</a>
-    </h1>
-  
-
-  
-  <a href="/2020/08/14/vue%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/" class="archive-article-date">
-  	<time datetime="2020-08-14T06:36:54.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-08-14</time>
-</a>
-  <!-- 需要添加的位置 -->
-  <!-- 开始添加字数统计-->
-  
-  <div style="margin-top:10px;">
-  <span class="post-time">
-    <span class="post-meta-item-icon">
-      <i class="fa fa-keyboard-o"></i>
-      <span class="post-meta-item-text"> 字数统计: </span>
-      <span class="post-count">3.3k字</span>
-    </span>
-  </span>
-
-  <span class="post-time">
-    &nbsp; | &nbsp;
-    <span class="post-meta-item-icon">
-      <i class="fa fa-hourglass-half"></i>
-      <span class="post-meta-item-text"> 阅读时长: </span>
-      <span class="post-count">14分</span>
-    </span>
-  </span>
-</div>
-  
-  <!-- 添加完成 -->
-
-  
-  <!-- 添加代码 -->
-  
-
-  </header>
-  
-  <div class="article-entry" itemprop="articleBody">
-    
-    
-    <h4 id=""><a href="#" class="headerlink" title=""></a></h4><h1 id="Vue项目规范"><a href="#Vue项目规范" class="headerlink" title="Vue项目规范"></a>Vue项目规范</h1><p>[TOC]</p>
-<h2 id="项目工程目录"><a href="#项目工程目录" class="headerlink" title="项目工程目录"></a>项目工程目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">build &#x2F;&#x2F; 使用vue&#x2F;cli webpack自动生成</span><br><span class="line">config &#x2F;&#x2F; 项目配置 包括生产环境和线上环境</span><br><span class="line">|- dev.env.js</span><br><span class="line">|- index.js</span><br><span class="line">|- prod.env.js</span><br><span class="line">node_modules &#x2F;&#x2F; 依赖包</span><br><span class="line">src</span><br><span class="line">|- api &#x2F;&#x2F; 接口</span><br><span class="line">|- assets &#x2F;&#x2F; 静态资源</span><br><span class="line">	|- json &#x2F;&#x2F; json数据</span><br><span class="line">	|- img &#x2F;&#x2F; 图片</span><br><span class="line">	|- scss &#x2F;&#x2F; 样式</span><br><span class="line">|- components &#x2F;&#x2F; 组件</span><br><span class="line">|- router &#x2F;&#x2F; 路由 （可选）</span><br><span class="line">|- store &#x2F;&#x2F; vuex状态管理 （可选）</span><br><span class="line">|- utils &#x2F;&#x2F; 工具类</span><br><span class="line">	|- utils.js &#x2F;&#x2F; 工具类集合</span><br><span class="line">	|- HTTPRequest.js &#x2F;&#x2F; 请求封装</span><br><span class="line">	|- index.js &#x2F;&#x2F; 导出所有工具类</span><br><span class="line">|- views &#x2F;&#x2F; 页面</span><br><span class="line">|- App.vue &#x2F;&#x2F; 根文件</span><br><span class="line">|- main.js &#x2F;&#x2F; 和App.js配对的</span><br><span class="line">.babelrc &#x2F;&#x2F; babel插件配置</span><br><span class="line">static &#x2F;&#x2F; 单独打包文件夹 一般和gulpfile一起使用</span><br><span class="line">.eslintrc.js &#x2F;&#x2F; eslint配置</span><br><span class="line">gulpfile.js &#x2F;&#x2F; 不使用webpack打包时才有</span><br><span class="line">gitignore &#x2F;&#x2F; git指定其中内容不上传仓库</span><br><span class="line">package.json &#x2F;&#x2F; 包插件配置</span><br><span class="line">package-lock.json &#x2F;&#x2F; 锁定的包插件配置</span><br><span class="line">README.md &#x2F;&#x2F; 项目介绍文件</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="1-必须遵循的规则"><a href="#1-必须遵循的规则" class="headerlink" title="1.必须遵循的规则"></a>1.必须遵循的规则</h2><h3 id="1-1-组件名为多个单词"><a href="#1-1-组件名为多个单词" class="headerlink" title="1.1 组件名为多个单词"></a>1.1 组件名为多个单词</h3><p><strong>组件名应该始终是多个单词的，根组件 <code>App</code> 以及 <code>&lt;transition&gt;</code>、<code>&lt;component&gt;</code> 之类的 Vue 内置组件除外。</strong></p>
-<p><strong>反例</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'Todo'</span>,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'TodoItem'</span>,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-组件数据"><a href="#1-2-组件数据" class="headerlink" title="1.2 组件数据"></a>1.2 组件数据</h3><p><strong>组件的 <code>data</code> 必须是一个函数。</strong></p>
-<p>当在组件中使用 <code>data</code> property 的时候 (除了 <code>new Vue</code> 外的任何地方)，它的值必须是返回一个对象的函数。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    foo: &#39;bar&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      foo: &#39;bar&#39;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; vue 根实例</span><br><span class="line">&#x2F;&#x2F; 在一个 Vue 的根实例上直接使用对象是可以的，</span><br><span class="line">&#x2F;&#x2F; 因为只存在一个这样的实例。</span><br><span class="line">new Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    foo: &#39;bar&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-prop定义"><a href="#1-3-prop定义" class="headerlink" title="1.3 prop定义"></a>1.3 prop定义</h3><p><strong>Prop 定义应该尽量详细。</strong></p>
-<p>在你提交的代码中，prop 的定义应该尽量详细，至少需要指定其类型。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 这样做只有开发原型系统时可以接受</span><br><span class="line">props: [&#39;status&#39;]</span><br></pre></td></tr></table></figure>
-
-
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  status: String</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 更好的做法！</span><br><span class="line">props: &#123;</span><br><span class="line">  status: &#123;</span><br><span class="line">    type: String,</span><br><span class="line">    required: true,</span><br><span class="line">    validator: function (value) &#123;</span><br><span class="line">      return [</span><br><span class="line">        &#39;syncing&#39;,</span><br><span class="line">        &#39;synced&#39;,</span><br><span class="line">        &#39;version-conflict&#39;,</span><br><span class="line">        &#39;error&#39;</span><br><span class="line">      ].indexOf(value) !&#x3D;&#x3D; -1</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-为v-for-设置键值"><a href="#1-4-为v-for-设置键值" class="headerlink" title="1.4 为v-for 设置键值"></a>1.4 为<code>v-for</code> 设置键值</h3><p><strong>总是用 <code>key</code> 配合 <code>v-for</code>。</strong></p>
-<p>在组件上<em>总是</em>必须用 <code>key</code> 配合 <code>v-for</code>，以便维护内部组件及其子树的状态。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span>&gt;</span></span><br><span class="line">    &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"todo in todos"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"todo.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-5-避免v-if和v-for用在一起"><a href="#1-5-避免v-if和v-for用在一起" class="headerlink" title="1.5  避免v-if和v-for用在一起"></a>1.5  避免<code>v-if</code>和<code>v-for</code>用在一起</h3><p><strong>永远不要把 <code>v-if</code> 和 <code>v-for</code> 同时用在同一个元素上。</strong></p>
-<p>一般我们在两种常见的情况下会倾向于这样做：</p>
-<ul>
-<li>为了过滤一个列表中的项目 (比如 <code>v-for=&quot;user in users&quot; v-if=&quot;user.isActive&quot;</code>)。在这种情形下，请将 <code>users</code> 替换为一个计算属性 (比如 <code>activeUsers</code>)，让其返回过滤后的列表。</li>
-<li>为了避免渲染本应该被隐藏的列表 (比如 <code>v-for=&quot;user in users&quot; v-if=&quot;shouldShowUsers&quot;</code>)。这种情形下，请将 <code>v-if</code> 移动至容器元素上 (比如 <code>ul</code>、<code>ol</code>)。</li>
-</ul>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-if</span>=<span class="string">"user.isActive"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// other</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-if</span>=<span class="string">"shouldShowUsers"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in activeUsers"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// other</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">v-if</span>=<span class="string">"shouldShowUsers"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-6-为组件设置作用域"><a href="#1-6-为组件设置作用域" class="headerlink" title="1.6 为组件设置作用域"></a>1.6 为组件设置作用域</h3><p><strong>对于应用来说，顶级 <code>App</code> 组件和布局组件中的样式可以是全局的，但是其它所有组件都应该是有作用域的。</strong></p>
-<p>不一定使用 scoped 属性使用 <code>css</code> 的 <code>BEM</code> 规则定义类名或者是<code>css Modules</code>也可以</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.btn-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用 `scoped` attribute --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"button button-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.button-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 使用 CSS Modules --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">:class</span>=<span class="string">"[$style.button, $style.buttonClose]"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">module</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.buttonClose</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 使用 BEM 约定 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"c-Button c-Button--close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.c-Button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.c-Button--close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-强烈推荐遵循的规则"><a href="#2-强烈推荐遵循的规则" class="headerlink" title="2.强烈推荐遵循的规则"></a>2.强烈推荐遵循的规则</h2><h3 id="2-1-组件文件"><a href="#2-1-组件文件" class="headerlink" title="2.1 组件文件"></a>2.1 组件文件</h3><p><strong>只要有能够拼接文件的构建系统，就把每个组件单独分成文件。</strong></p>
-<p>当你需要编辑一个组件或查阅一个组件的用法时，可以更快速的找到它。</p>
-<p>反例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'TodoList'</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">Vue.component(<span class="string">'TodoItem'</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.js</span><br><span class="line">|- TodoItem.js</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoItem.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-单文件组件文件的大小写"><a href="#2-2-单文件组件文件的大小写" class="headerlink" title="2.2 单文件组件文件的大小写"></a>2.2 单文件组件文件的大小写</h3><p><strong>单文件组件的文件名应该要么始终是单词大写开头 (PascalCase)，要么始终是横线连接 (kebab-case)。</strong></p>
-<p>单词大写开头对于代码编辑器的自动补全最为友好，因为这使得我们在 JS(X) 和模板中引用组件的方式尽可能的一致。然而，混用文件命名方式有的时候会导致大小写不敏感的文件系统的问题，这也是横线连接命名同样完全可取的原因。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- mycomponent.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- myComponent.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- MyComponent.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- my-component.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-基础组件名"><a href="#2-3-基础组件名" class="headerlink" title="2.3 基础组件名"></a>2.3 基础组件名</h3><p><strong>应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 <code>Base</code>、<code>App</code> 或 <code>V</code>。</strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- MyButton.vue</span><br><span class="line">|- VueTable.vue</span><br><span class="line">|- Icon.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- BaseButton.vue</span><br><span class="line">|- BaseTable.vue</span><br><span class="line">|- BaseIcon.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- AppButton.vue</span><br><span class="line">|- AppTable.vue</span><br><span class="line">|- AppIcon.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- VButton.vue</span><br><span class="line">|- VTable.vue</span><br><span class="line">|- VIcon.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-单例组件名"><a href="#2-4-单例组件名" class="headerlink" title="2.4 单例组件名"></a>2.4 单例组件名</h3><p><strong>只应该拥有单个活跃实例的组件应该以 <code>The</code> 前缀命名，以示其唯一性。</strong></p>
-<p>每个页面只用了一次 且不接受prop，是为应用定制的。如果发现有必要加上prop，那就表明这实际上是一个可复用的组件，只是目前在当前每个页面只用了一次。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- Heading.vue</span><br><span class="line">|- MySidebar.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TheHeading.vue</span><br><span class="line">|- TheSidebar.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-5-紧密耦合的组件名"><a href="#2-5-紧密耦合的组件名" class="headerlink" title="2.5 紧密耦合的组件名"></a>2.5 紧密耦合的组件名</h3><p><strong>和父组件紧密耦合的子组件应该以父组件名作为前缀命名。</strong>、</p>
-<p>如果一个组件只在某个父组件的场景下有意义，这层关系应该体现在其名字上。因为编辑器通常会按字母顺序组织文件，所以这样做可以把相关联的文件排在一起。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoItem.vue</span><br><span class="line">|- TodoButton.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchSidebar.vue</span><br><span class="line">|- NavigationForSearchSidebar.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoListItem.vue</span><br><span class="line">|- TodoListItemButton.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchSidebar.vue</span><br><span class="line">|- SearchSidebarNavigation.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-6-组件名中单词的顺序"><a href="#2-6-组件名中单词的顺序" class="headerlink" title="2.6 组件名中单词的顺序"></a>2.6 组件名中单词的顺序</h3><p><strong>组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾。</strong></p>
-<p>当组件多时你可能想换成多级目录的方式，把所有的搜索组件放到“search”目录，把所有的设置组件放到“settings”目录。我们只推荐在非常大型 (如有 100+ 个组件) 的应用下才考虑这么做，因为：</p>
-<ul>
-<li>在多级目录间找来找去，要比在单个 <code>components</code> 目录下滚动查找要花费更多的精力。</li>
-<li>存在组件重名 (比如存在多个 <code>ButtonDelete</code> 组件) 的时候在编辑器里更难快速定位。</li>
-<li>让重构变得更难，因为为一个移动了的组件更新相关引用时，查找/替换通常并不高效。</li>
-</ul>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- ClearSearchButton.vue</span><br><span class="line">|- ExcludeFromSearchInput.vue</span><br><span class="line">|- LaunchOnStartupCheckbox.vue</span><br><span class="line">|- RunSearchButton.vue</span><br><span class="line">|- SearchInput.vue</span><br><span class="line">|- TermsCheckbox.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchButtonClear.vue</span><br><span class="line">|- SearchButtonRun.vue</span><br><span class="line">|- SearchInputQuery.vue</span><br><span class="line">|- SearchInputExcludeGlob.vue</span><br><span class="line">|- SettingsCheckboxTerms.vue</span><br><span class="line">|- SettingsCheckboxLaunchOnStartup.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-7-自闭合组件"><a href="#2-7-自闭合组件" class="headerlink" title="2.7 自闭合组件"></a>2.7 自闭合组件</h3><p><strong>在单文件组件、字符串模板和 JSX 中没有内容的组件应该是自闭合的——但在 DOM 模板里永远不要这样做。</strong></p>
-<p>dom模板指.html 文件里写的代码</p>
-<p>单文件指的.vue文件</p>
-<p><strong><em>单文件可以使用自闭合但是DOM模板不可以</em></strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;</span><br><span class="line">&lt;MyComponent&gt;&lt;&#x2F;MyComponent&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在 DOM 模板中 --&gt;</span><br><span class="line">&lt;my-component&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;</span><br><span class="line">&lt;MyComponent&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在 DOM 模板中 --&gt;</span><br><span class="line">&lt;my-component&gt;&lt;&#x2F;my-component&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-8-模板中的组件名大小写"><a href="#2-8-模板中的组件名大小写" class="headerlink" title="2.8 模板中的组件名大小写"></a>2.8 模板中的组件名大小写</h3><p><strong>单文件和字符串模板中可以使用小驼峰命名方法但是DOM模板中一定是使用短横线命名方法的</strong></p>
-<p><strong>由于 HTML 是大小写不敏感的，在 DOM 模板中必须仍使用 kebab-case。</strong></p>
-<p><em>建议在都使用短横线方法命名</em></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mycomponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">myComponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 DOM 模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span>&gt;</span><span class="tag">&lt;/<span class="name">MyComponent</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 DOM 模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在所有地方 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-9-完整的单词的组件名"><a href="#2-9-完整的单词的组件名" class="headerlink" title="2.9 完整的单词的组件名"></a>2.9 完整的单词的组件名</h3><p><strong>组件名应该倾向于完整单词而不是缩写。</strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SdSettings.vue</span><br><span class="line">|- UProfOpts.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- StudentDashboardSettings.vue</span><br><span class="line">|- UserProfileOptions.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-10-Prop名大小写"><a href="#2-10-Prop名大小写" class="headerlink" title="2.10 Prop名大小写"></a>2.10 Prop名大小写</h3><p><strong>在声明 prop 的时候，其命名应该始终使用 camelCase（驼峰命名），而在模板和 JSX 中应该始终使用 kebab-case（短横线命名）。</strong></p>
-<p>反例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  <span class="string">'greeting-text'</span>: <span class="built_in">String</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WelcomeMessage</span> <span class="attr">greetingText</span>=<span class="string">"hi"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  greetingText: String</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WelcomeMessage</span> <span class="attr">greeting-text</span>=<span class="string">"hi"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-11-多个的属性的元素"><a href="#2-11-多个的属性的元素" class="headerlink" title="2.11 多个的属性的元素"></a>2.11 多个的属性的元素</h3><p><strong>多个 attribute 的元素应该分多行撰写，每个 attribute 一行。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://vuejs.org/images/logo.png"</span> <span class="attr">alt</span>=<span class="string">"Vue Logo"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span> <span class="attr">foo</span>=<span class="string">"a"</span> <span class="attr">bar</span>=<span class="string">"b"</span> <span class="attr">baz</span>=<span class="string">"c"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://vuejs.org/images/logo.png"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">alt</span>=<span class="string">"Vue Logo"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span></span></span><br><span class="line"><span class="tag">  <span class="attr">foo</span>=<span class="string">"a"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">bar</span>=<span class="string">"b"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">baz</span>=<span class="string">"c"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-12-模板中简单的表达式"><a href="#2-12-模板中简单的表达式" class="headerlink" title="2.12 模板中简单的表达式"></a>2.12 模板中简单的表达式</h3><p><strong>组件模板应该只包含简单的表达式，复杂的表达式则应该重构为计算属性或方法。</strong></p>
-<p>复杂表达式会让你的模板变得不那么声明式。我们应该尽量描述应该出现的<em>是什么</em>，而非<em>如何</em>计算那个值。而且计算属性和方法使得代码可以重用。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;</span><br><span class="line">  fullName.split(' ').map(function (word) &#123;</span><br><span class="line">    return word[0].toUpperCase() + word.slice(1)</span><br><span class="line">  &#125;).join(' ')</span><br><span class="line">&#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在模板中 --&gt;</span></span><br><span class="line">&#123;&#123; normalizedFullName &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 复杂表达式已经移入一个计算属性</span><br><span class="line">computed: &#123;</span><br><span class="line">  normalizedFullName: function () &#123;</span><br><span class="line">    return this.fullName.split(&#39; &#39;).map(function (word) &#123;</span><br><span class="line">      return word[0].toUpperCase() + word.slice(1)</span><br><span class="line">    &#125;).join(&#39; &#39;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-13-带引号的属性值"><a href="#2-13-带引号的属性值" class="headerlink" title="2.13 带引号的属性值"></a>2.13 带引号的属性值</h3><p><strong>非空 HTML attribute 值应该始终带引号 (单引号或双引号，选你 JS 里不用的那个)。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">text</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">AppSidebar</span> <span class="attr">:style</span>=<span class="string">&#123;width:sidebarWidth+</span>'<span class="attr">px</span>'&#125;&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">AppSidebar</span> <span class="attr">:style</span>=<span class="string">"&#123; width: sidebarWidth + 'px' &#125;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-14-指令缩写"><a href="#2-14-指令缩写" class="headerlink" title="2.14 指令缩写"></a>2.14 指令缩写</h3><p><strong>指令缩写 (用 <code>:</code> 表示 <code>v-bind:</code>、用 <code>@</code> 表示 <code>v-on:</code> 和用 <code>#</code> 表示 <code>v-slot:</code>) 应该要么都用要么都不用。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-on:input</span>=<span class="string">"onInput"</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">focus</span>=<span class="string">"onFocus"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:header</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Here might be a page title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> #<span class="attr">footer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Here's some contact info<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">input</span>=<span class="string">"onInput"</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">focus</span>=<span class="string">"onFocus"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-推荐遵循的规则"><a href="#3-推荐遵循的规则" class="headerlink" title="3. 推荐遵循的规则"></a>3. 推荐遵循的规则</h2><h3 id="3-1-单文件组件的顶级元素顺序"><a href="#3-1-单文件组件的顶级元素顺序" class="headerlink" title="3.1 单文件组件的顶级元素顺序"></a>3.1 单文件组件的顶级元素顺序</h3><p><strong>单文件组件应该总是让 <code>&lt;script&gt;</code>、<code>&lt;template&gt;</code> 和 <code>&lt;style&gt;</code> 标签的顺序保持一致。且 <code>&lt;style&gt;</code> 要放在最后，因为另外两个标签至少要有一个。</strong></p>
-<h2 id="4-谨慎使用"><a href="#4-谨慎使用" class="headerlink" title="4. 谨慎使用"></a>4. 谨慎使用</h2><h3 id="4-1-scoped中的元素选择器"><a href="#4-1-scoped中的元素选择器" class="headerlink" title="4.1 scoped中的元素选择器"></a>4.1 scoped中的元素选择器</h3><p><strong>元素选择器应该避免在 <code>scoped</code> 中出现。</strong></p>
-<p>在 <code>scoped</code> 样式中，类选择器比元素选择器更好，因为大量使用元素选择器是很慢的。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line">button &#123;</span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.btn-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-隐性的父子组件通信"><a href="#4-2-隐性的父子组件通信" class="headerlink" title="4.2 隐性的父子组件通信"></a>4.2 隐性的父子组件通信</h3><p><strong>应该优先通过 prop 和事件进行父子组件之间的通信，而不是 <code>this.$parent</code> 或变更 prop。</strong></p>
-<p>一个理想的 Vue 应用是 prop 向下传递，事件向上传递的。遵循这一约定会让你的组件更易于理解。然而，在一些边界情况下 prop 的变更或 <code>this.$parent</code> 能够简化两个深度耦合的组件。</p>
-
-    
-
-    <!-- 
-    <h4 id=""><a href="#" class="headerlink" title=""></a></h4><h1 id="Vue项目规范"><a href="#Vue项目规范" class="headerlink" title="Vue项目规范"></a>Vue项目规范</h1><p>[TOC]</p>
-<h2 id="项目工程目录"><a href="#项目工程目录" class="headerlink" title="项目工程目录"></a>项目工程目录</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">build &#x2F;&#x2F; 使用vue&#x2F;cli webpack自动生成</span><br><span class="line">config &#x2F;&#x2F; 项目配置 包括生产环境和线上环境</span><br><span class="line">|- dev.env.js</span><br><span class="line">|- index.js</span><br><span class="line">|- prod.env.js</span><br><span class="line">node_modules &#x2F;&#x2F; 依赖包</span><br><span class="line">src</span><br><span class="line">|- api &#x2F;&#x2F; 接口</span><br><span class="line">|- assets &#x2F;&#x2F; 静态资源</span><br><span class="line">	|- json &#x2F;&#x2F; json数据</span><br><span class="line">	|- img &#x2F;&#x2F; 图片</span><br><span class="line">	|- scss &#x2F;&#x2F; 样式</span><br><span class="line">|- components &#x2F;&#x2F; 组件</span><br><span class="line">|- router &#x2F;&#x2F; 路由 （可选）</span><br><span class="line">|- store &#x2F;&#x2F; vuex状态管理 （可选）</span><br><span class="line">|- utils &#x2F;&#x2F; 工具类</span><br><span class="line">	|- utils.js &#x2F;&#x2F; 工具类集合</span><br><span class="line">	|- HTTPRequest.js &#x2F;&#x2F; 请求封装</span><br><span class="line">	|- index.js &#x2F;&#x2F; 导出所有工具类</span><br><span class="line">|- views &#x2F;&#x2F; 页面</span><br><span class="line">|- App.vue &#x2F;&#x2F; 根文件</span><br><span class="line">|- main.js &#x2F;&#x2F; 和App.js配对的</span><br><span class="line">.babelrc &#x2F;&#x2F; babel插件配置</span><br><span class="line">static &#x2F;&#x2F; 单独打包文件夹 一般和gulpfile一起使用</span><br><span class="line">.eslintrc.js &#x2F;&#x2F; eslint配置</span><br><span class="line">gulpfile.js &#x2F;&#x2F; 不使用webpack打包时才有</span><br><span class="line">gitignore &#x2F;&#x2F; git指定其中内容不上传仓库</span><br><span class="line">package.json &#x2F;&#x2F; 包插件配置</span><br><span class="line">package-lock.json &#x2F;&#x2F; 锁定的包插件配置</span><br><span class="line">README.md &#x2F;&#x2F; 项目介绍文件</span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="1-必须遵循的规则"><a href="#1-必须遵循的规则" class="headerlink" title="1.必须遵循的规则"></a>1.必须遵循的规则</h2><h3 id="1-1-组件名为多个单词"><a href="#1-1-组件名为多个单词" class="headerlink" title="1.1 组件名为多个单词"></a>1.1 组件名为多个单词</h3><p><strong>组件名应该始终是多个单词的，根组件 <code>App</code> 以及 <code>&lt;transition&gt;</code>、<code>&lt;component&gt;</code> 之类的 Vue 内置组件除外。</strong></p>
-<p><strong>反例</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'Todo'</span>,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</span><br><span class="line">  name: <span class="string">'TodoItem'</span>,</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-2-组件数据"><a href="#1-2-组件数据" class="headerlink" title="1.2 组件数据"></a>1.2 组件数据</h3><p><strong>组件的 <code>data</code> 必须是一个函数。</strong></p>
-<p>当在组件中使用 <code>data</code> property 的时候 (除了 <code>new Vue</code> 外的任何地方)，它的值必须是返回一个对象的函数。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    foo: &#39;bar&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">export default &#123;</span><br><span class="line">  data () &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      foo: &#39;bar&#39;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; vue 根实例</span><br><span class="line">&#x2F;&#x2F; 在一个 Vue 的根实例上直接使用对象是可以的，</span><br><span class="line">&#x2F;&#x2F; 因为只存在一个这样的实例。</span><br><span class="line">new Vue(&#123;</span><br><span class="line">  data: &#123;</span><br><span class="line">    foo: &#39;bar&#39;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-3-prop定义"><a href="#1-3-prop定义" class="headerlink" title="1.3 prop定义"></a>1.3 prop定义</h3><p><strong>Prop 定义应该尽量详细。</strong></p>
-<p>在你提交的代码中，prop 的定义应该尽量详细，至少需要指定其类型。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 这样做只有开发原型系统时可以接受</span><br><span class="line">props: [&#39;status&#39;]</span><br></pre></td></tr></table></figure>
-
-
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  status: String</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F; 更好的做法！</span><br><span class="line">props: &#123;</span><br><span class="line">  status: &#123;</span><br><span class="line">    type: String,</span><br><span class="line">    required: true,</span><br><span class="line">    validator: function (value) &#123;</span><br><span class="line">      return [</span><br><span class="line">        &#39;syncing&#39;,</span><br><span class="line">        &#39;synced&#39;,</span><br><span class="line">        &#39;version-conflict&#39;,</span><br><span class="line">        &#39;error&#39;</span><br><span class="line">      ].indexOf(value) !&#x3D;&#x3D; -1</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="1-4-为v-for-设置键值"><a href="#1-4-为v-for-设置键值" class="headerlink" title="1.4 为v-for 设置键值"></a>1.4 为<code>v-for</code> 设置键值</h3><p><strong>总是用 <code>key</code> 配合 <code>v-for</code>。</strong></p>
-<p>在组件上<em>总是</em>必须用 <code>key</code> 配合 <code>v-for</code>，以便维护内部组件及其子树的状态。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span> <span class="attr">v-for</span>=<span class="string">"todo in todos"</span>&gt;</span></span><br><span class="line">    &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"todo in todos"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"todo.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; todo.text &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-5-避免v-if和v-for用在一起"><a href="#1-5-避免v-if和v-for用在一起" class="headerlink" title="1.5  避免v-if和v-for用在一起"></a>1.5  避免<code>v-if</code>和<code>v-for</code>用在一起</h3><p><strong>永远不要把 <code>v-if</code> 和 <code>v-for</code> 同时用在同一个元素上。</strong></p>
-<p>一般我们在两种常见的情况下会倾向于这样做：</p>
-<ul>
-<li>为了过滤一个列表中的项目 (比如 <code>v-for=&quot;user in users&quot; v-if=&quot;user.isActive&quot;</code>)。在这种情形下，请将 <code>users</code> 替换为一个计算属性 (比如 <code>activeUsers</code>)，让其返回过滤后的列表。</li>
-<li>为了避免渲染本应该被隐藏的列表 (比如 <code>v-for=&quot;user in users&quot; v-if=&quot;shouldShowUsers&quot;</code>)。这种情形下，请将 <code>v-if</code> 移动至容器元素上 (比如 <code>ul</code>、<code>ol</code>)。</li>
-</ul>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-if</span>=<span class="string">"user.isActive"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// other</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-if</span>=<span class="string">"shouldShowUsers"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">ul</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in activeUsers"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br><span class="line"></span><br><span class="line">// other</span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">v-if</span>=<span class="string">"shouldShowUsers"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span></span></span><br><span class="line"><span class="tag">    <span class="attr">v-for</span>=<span class="string">"user in users"</span></span></span><br><span class="line"><span class="tag">    <span class="attr">:key</span>=<span class="string">"user.id"</span></span></span><br><span class="line"><span class="tag">  &gt;</span></span><br><span class="line">    &#123;&#123; user.name &#125;&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="1-6-为组件设置作用域"><a href="#1-6-为组件设置作用域" class="headerlink" title="1.6 为组件设置作用域"></a>1.6 为组件设置作用域</h3><p><strong>对于应用来说，顶级 <code>App</code> 组件和布局组件中的样式可以是全局的，但是其它所有组件都应该是有作用域的。</strong></p>
-<p>不一定使用 scoped 属性使用 <code>css</code> 的 <code>BEM</code> 规则定义类名或者是<code>css Modules</code>也可以</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.btn-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 使用 `scoped` attribute --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"button button-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.button-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 使用 CSS Modules --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">:class</span>=<span class="string">"[$style.button, $style.buttonClose]"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">module</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.buttonClose</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 使用 BEM 约定 --&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"c-Button c-Button--close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.c-Button</span> &#123;</span></span><br><span class="line">  border: none;</span><br><span class="line">  border-radius: 2px;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="css"><span class="selector-class">.c-Button--close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="2-强烈推荐遵循的规则"><a href="#2-强烈推荐遵循的规则" class="headerlink" title="2.强烈推荐遵循的规则"></a>2.强烈推荐遵循的规则</h2><h3 id="2-1-组件文件"><a href="#2-1-组件文件" class="headerlink" title="2.1 组件文件"></a>2.1 组件文件</h3><p><strong>只要有能够拼接文件的构建系统，就把每个组件单独分成文件。</strong></p>
-<p>当你需要编辑一个组件或查阅一个组件的用法时，可以更快速的找到它。</p>
-<p>反例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Vue.component(<span class="string">'TodoList'</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br><span class="line"></span><br><span class="line">Vue.component(<span class="string">'TodoItem'</span>, &#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.js</span><br><span class="line">|- TodoItem.js</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoItem.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-2-单文件组件文件的大小写"><a href="#2-2-单文件组件文件的大小写" class="headerlink" title="2.2 单文件组件文件的大小写"></a>2.2 单文件组件文件的大小写</h3><p><strong>单文件组件的文件名应该要么始终是单词大写开头 (PascalCase)，要么始终是横线连接 (kebab-case)。</strong></p>
-<p>单词大写开头对于代码编辑器的自动补全最为友好，因为这使得我们在 JS(X) 和模板中引用组件的方式尽可能的一致。然而，混用文件命名方式有的时候会导致大小写不敏感的文件系统的问题，这也是横线连接命名同样完全可取的原因。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- mycomponent.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- myComponent.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- MyComponent.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- my-component.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-3-基础组件名"><a href="#2-3-基础组件名" class="headerlink" title="2.3 基础组件名"></a>2.3 基础组件名</h3><p><strong>应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 <code>Base</code>、<code>App</code> 或 <code>V</code>。</strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- MyButton.vue</span><br><span class="line">|- VueTable.vue</span><br><span class="line">|- Icon.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- BaseButton.vue</span><br><span class="line">|- BaseTable.vue</span><br><span class="line">|- BaseIcon.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- AppButton.vue</span><br><span class="line">|- AppTable.vue</span><br><span class="line">|- AppIcon.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- VButton.vue</span><br><span class="line">|- VTable.vue</span><br><span class="line">|- VIcon.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-4-单例组件名"><a href="#2-4-单例组件名" class="headerlink" title="2.4 单例组件名"></a>2.4 单例组件名</h3><p><strong>只应该拥有单个活跃实例的组件应该以 <code>The</code> 前缀命名，以示其唯一性。</strong></p>
-<p>每个页面只用了一次 且不接受prop，是为应用定制的。如果发现有必要加上prop，那就表明这实际上是一个可复用的组件，只是目前在当前每个页面只用了一次。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- Heading.vue</span><br><span class="line">|- MySidebar.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TheHeading.vue</span><br><span class="line">|- TheSidebar.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-5-紧密耦合的组件名"><a href="#2-5-紧密耦合的组件名" class="headerlink" title="2.5 紧密耦合的组件名"></a>2.5 紧密耦合的组件名</h3><p><strong>和父组件紧密耦合的子组件应该以父组件名作为前缀命名。</strong>、</p>
-<p>如果一个组件只在某个父组件的场景下有意义，这层关系应该体现在其名字上。因为编辑器通常会按字母顺序组织文件，所以这样做可以把相关联的文件排在一起。</p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoItem.vue</span><br><span class="line">|- TodoButton.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchSidebar.vue</span><br><span class="line">|- NavigationForSearchSidebar.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- TodoList.vue</span><br><span class="line">|- TodoListItem.vue</span><br><span class="line">|- TodoListItemButton.vue</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchSidebar.vue</span><br><span class="line">|- SearchSidebarNavigation.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-6-组件名中单词的顺序"><a href="#2-6-组件名中单词的顺序" class="headerlink" title="2.6 组件名中单词的顺序"></a>2.6 组件名中单词的顺序</h3><p><strong>组件名应该以高级别的 (通常是一般化描述的) 单词开头，以描述性的修饰词结尾。</strong></p>
-<p>当组件多时你可能想换成多级目录的方式，把所有的搜索组件放到“search”目录，把所有的设置组件放到“settings”目录。我们只推荐在非常大型 (如有 100+ 个组件) 的应用下才考虑这么做，因为：</p>
-<ul>
-<li>在多级目录间找来找去，要比在单个 <code>components</code> 目录下滚动查找要花费更多的精力。</li>
-<li>存在组件重名 (比如存在多个 <code>ButtonDelete</code> 组件) 的时候在编辑器里更难快速定位。</li>
-<li>让重构变得更难，因为为一个移动了的组件更新相关引用时，查找/替换通常并不高效。</li>
-</ul>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- ClearSearchButton.vue</span><br><span class="line">|- ExcludeFromSearchInput.vue</span><br><span class="line">|- LaunchOnStartupCheckbox.vue</span><br><span class="line">|- RunSearchButton.vue</span><br><span class="line">|- SearchInput.vue</span><br><span class="line">|- TermsCheckbox.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SearchButtonClear.vue</span><br><span class="line">|- SearchButtonRun.vue</span><br><span class="line">|- SearchInputQuery.vue</span><br><span class="line">|- SearchInputExcludeGlob.vue</span><br><span class="line">|- SettingsCheckboxTerms.vue</span><br><span class="line">|- SettingsCheckboxLaunchOnStartup.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-7-自闭合组件"><a href="#2-7-自闭合组件" class="headerlink" title="2.7 自闭合组件"></a>2.7 自闭合组件</h3><p><strong>在单文件组件、字符串模板和 JSX 中没有内容的组件应该是自闭合的——但在 DOM 模板里永远不要这样做。</strong></p>
-<p>dom模板指.html 文件里写的代码</p>
-<p>单文件指的.vue文件</p>
-<p><strong><em>单文件可以使用自闭合但是DOM模板不可以</em></strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;</span><br><span class="line">&lt;MyComponent&gt;&lt;&#x2F;MyComponent&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在 DOM 模板中 --&gt;</span><br><span class="line">&lt;my-component&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在单文件组件、字符串模板和 JSX 中 --&gt;</span><br><span class="line">&lt;MyComponent&#x2F;&gt;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 在 DOM 模板中 --&gt;</span><br><span class="line">&lt;my-component&gt;&lt;&#x2F;my-component&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-8-模板中的组件名大小写"><a href="#2-8-模板中的组件名大小写" class="headerlink" title="2.8 模板中的组件名大小写"></a>2.8 模板中的组件名大小写</h3><p><strong>单文件和字符串模板中可以使用小驼峰命名方法但是DOM模板中一定是使用短横线命名方法的</strong></p>
-<p><strong>由于 HTML 是大小写不敏感的，在 DOM 模板中必须仍使用 kebab-case。</strong></p>
-<p><em>建议在都使用短横线方法命名</em></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mycomponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">myComponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 DOM 模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span>&gt;</span><span class="tag">&lt;/<span class="name">MyComponent</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在单文件组件和字符串模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在 DOM 模板中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在所有地方 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">my-component</span>&gt;</span><span class="tag">&lt;/<span class="name">my-component</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="2-9-完整的单词的组件名"><a href="#2-9-完整的单词的组件名" class="headerlink" title="2.9 完整的单词的组件名"></a>2.9 完整的单词的组件名</h3><p><strong>组件名应该倾向于完整单词而不是缩写。</strong></p>
-<p>反例</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- SdSettings.vue</span><br><span class="line">|- UProfOpts.vue</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">components&#x2F;</span><br><span class="line">|- StudentDashboardSettings.vue</span><br><span class="line">|- UserProfileOptions.vue</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-10-Prop名大小写"><a href="#2-10-Prop名大小写" class="headerlink" title="2.10 Prop名大小写"></a>2.10 Prop名大小写</h3><p><strong>在声明 prop 的时候，其命名应该始终使用 camelCase（驼峰命名），而在模板和 JSX 中应该始终使用 kebab-case（短横线命名）。</strong></p>
-<p>反例</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  <span class="string">'greeting-text'</span>: <span class="built_in">String</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WelcomeMessage</span> <span class="attr">greetingText</span>=<span class="string">"hi"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">props: &#123;</span><br><span class="line">  greetingText: String</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">WelcomeMessage</span> <span class="attr">greeting-text</span>=<span class="string">"hi"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-11-多个的属性的元素"><a href="#2-11-多个的属性的元素" class="headerlink" title="2.11 多个的属性的元素"></a>2.11 多个的属性的元素</h3><p><strong>多个 attribute 的元素应该分多行撰写，每个 attribute 一行。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://vuejs.org/images/logo.png"</span> <span class="attr">alt</span>=<span class="string">"Vue Logo"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span> <span class="attr">foo</span>=<span class="string">"a"</span> <span class="attr">bar</span>=<span class="string">"b"</span> <span class="attr">baz</span>=<span class="string">"c"</span>/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">img</span></span></span><br><span class="line"><span class="tag">  <span class="attr">src</span>=<span class="string">"https://vuejs.org/images/logo.png"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">alt</span>=<span class="string">"Vue Logo"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">MyComponent</span></span></span><br><span class="line"><span class="tag">  <span class="attr">foo</span>=<span class="string">"a"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">bar</span>=<span class="string">"b"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">baz</span>=<span class="string">"c"</span></span></span><br><span class="line"><span class="tag">/&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-12-模板中简单的表达式"><a href="#2-12-模板中简单的表达式" class="headerlink" title="2.12 模板中简单的表达式"></a>2.12 模板中简单的表达式</h3><p><strong>组件模板应该只包含简单的表达式，复杂的表达式则应该重构为计算属性或方法。</strong></p>
-<p>复杂表达式会让你的模板变得不那么声明式。我们应该尽量描述应该出现的<em>是什么</em>，而非<em>如何</em>计算那个值。而且计算属性和方法使得代码可以重用。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;</span><br><span class="line">  fullName.split(' ').map(function (word) &#123;</span><br><span class="line">    return word[0].toUpperCase() + word.slice(1)</span><br><span class="line">  &#125;).join(' ')</span><br><span class="line">&#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 在模板中 --&gt;</span></span><br><span class="line">&#123;&#123; normalizedFullName &#125;&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 复杂表达式已经移入一个计算属性</span><br><span class="line">computed: &#123;</span><br><span class="line">  normalizedFullName: function () &#123;</span><br><span class="line">    return this.fullName.split(&#39; &#39;).map(function (word) &#123;</span><br><span class="line">      return word[0].toUpperCase() + word.slice(1)</span><br><span class="line">    &#125;).join(&#39; &#39;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="2-13-带引号的属性值"><a href="#2-13-带引号的属性值" class="headerlink" title="2.13 带引号的属性值"></a>2.13 带引号的属性值</h3><p><strong>非空 HTML attribute 值应该始终带引号 (单引号或双引号，选你 JS 里不用的那个)。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">text</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">AppSidebar</span> <span class="attr">:style</span>=<span class="string">&#123;width:sidebarWidth+</span>'<span class="attr">px</span>'&#125;&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">AppSidebar</span> <span class="attr">:style</span>=<span class="string">"&#123; width: sidebarWidth + 'px' &#125;"</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="2-14-指令缩写"><a href="#2-14-指令缩写" class="headerlink" title="2.14 指令缩写"></a>2.14 指令缩写</h3><p><strong>指令缩写 (用 <code>:</code> 表示 <code>v-bind:</code>、用 <code>@</code> 表示 <code>v-on:</code> 和用 <code>#</code> 表示 <code>v-slot:</code>) 应该要么都用要么都不用。</strong></p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-on:input</span>=<span class="string">"onInput"</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">focus</span>=<span class="string">"onFocus"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> <span class="attr">v-slot:header</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Here might be a page title<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">template</span> #<span class="attr">footer</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">p</span>&gt;</span>Here's some contact info<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:value</span>=<span class="string">"newTodoText"</span></span></span><br><span class="line"><span class="tag">  <span class="attr">v-bind:placeholder</span>=<span class="string">"newTodoInstructions"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">input</span>=<span class="string">"onInput"</span></span></span><br><span class="line"><span class="tag">  @<span class="attr">focus</span>=<span class="string">"onFocus"</span></span></span><br><span class="line"><span class="tag">&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="3-推荐遵循的规则"><a href="#3-推荐遵循的规则" class="headerlink" title="3. 推荐遵循的规则"></a>3. 推荐遵循的规则</h2><h3 id="3-1-单文件组件的顶级元素顺序"><a href="#3-1-单文件组件的顶级元素顺序" class="headerlink" title="3.1 单文件组件的顶级元素顺序"></a>3.1 单文件组件的顶级元素顺序</h3><p><strong>单文件组件应该总是让 <code>&lt;script&gt;</code>、<code>&lt;template&gt;</code> 和 <code>&lt;style&gt;</code> 标签的顺序保持一致。且 <code>&lt;style&gt;</code> 要放在最后，因为另外两个标签至少要有一个。</strong></p>
-<h2 id="4-谨慎使用"><a href="#4-谨慎使用" class="headerlink" title="4. 谨慎使用"></a>4. 谨慎使用</h2><h3 id="4-1-scoped中的元素选择器"><a href="#4-1-scoped中的元素选择器" class="headerlink" title="4.1 scoped中的元素选择器"></a>4.1 scoped中的元素选择器</h3><p><strong>元素选择器应该避免在 <code>scoped</code> 中出现。</strong></p>
-<p>在 <code>scoped</code> 样式中，类选择器比元素选择器更好，因为大量使用元素选择器是很慢的。</p>
-<p>反例</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line">button &#123;</span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>好例子</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">button</span> <span class="attr">class</span>=<span class="string">"btn btn-close"</span>&gt;</span>X<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">style</span> <span class="attr">scoped</span>&gt;</span></span><br><span class="line"><span class="css"><span class="selector-class">.btn-close</span> &#123;</span></span><br><span class="line">  background-color: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="4-2-隐性的父子组件通信"><a href="#4-2-隐性的父子组件通信" class="headerlink" title="4.2 隐性的父子组件通信"></a>4.2 隐性的父子组件通信</h3><p><strong>应该优先通过 prop 和事件进行父子组件之间的通信，而不是 <code>this.$parent</code> 或变更 prop。</strong></p>
-<p>一个理想的 Vue 应用是 prop 向下传递，事件向上传递的。遵循这一约定会让你的组件更易于理解。然而，在一些边界情况下 prop 的变更或 <code>this.$parent</code> 能够简化两个深度耦合的组件。</p>
-
-     -->
-
-    
-  </div>
-  <div class="article-info article-info-index">
-    
-    
-    
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/vue//" class="article-tag-list-link color4">vue</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-    
-    <p class="article-more-link">
-      <a class="article-more-a" href="/2020/08/14/vue%E9%A1%B9%E7%9B%AE%E8%A7%84%E8%8C%83/">展开全文 >></a>
-    </p>
-    
-
-    
-    <div class="clearfix"></div>
-  </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-
 
 <nav id="page-nav">
   <a class="extend prev" rel="prev" href="/">上一页</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">下一页</a>
@@ -1978,6 +1548,10 @@ var定义的变量都在window中 可以使用window.变量名取值
             
             <li class="article-tag-list-item">
               <a href="javascript:void(0)" class="js-tag color4">php</a>
+            </li>
+            
+            <li class="article-tag-list-item">
+              <a href="javascript:void(0)" class="js-tag color2">cookie</a>
             </li>
             
             <div class="clearfix"></div>
