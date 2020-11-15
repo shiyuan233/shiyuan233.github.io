@@ -232,10 +232,12 @@
 <p>v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value=”” 和 @input=””</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input :value=<span class="string">"price"</span> @input=<span class="string">"price=$event.target.value"</span>&gt;&lt;<span class="regexp">/input&gt;</span></span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
 <h4 id="拆分了一个value属性"><a href="#拆分了一个value属性" class="headerlink" title="拆分了一个value属性"></a>拆分了一个value属性</h4><ul>
 <li>当在input输入框输入内容时，会自动的触发input事件，更新绑定的name值。</li>
 <li>当name的值通过JavaScript改变时，会更新input的value值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// AddPrice.vue</span></span><br><span class="line"> <span class="comment">// 通过props接受绑定的value参数</span></span><br><span class="line"> &lt;template&gt;</span><br><span class="line"> 	 &lt;div @click=<span class="string">"$emit('input',value + 100 )"</span>&gt;点击加钱&lt;div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  export default &#123;</span></span><br><span class="line"><span class="regexp">    props: ['value']</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="comment">// 在父组件中调用</span></span><br><span class="line">&lt;add-price v-model=<span class="string">"price"</span>&gt;&lt;<span class="regexp">/add-price&gt;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+<!--more-->
 <h4 id="input的checked分为单选和多选"><a href="#input的checked分为单选和多选" class="headerlink" title="input的checked分为单选和多选"></a>input的checked分为单选和多选</h4></li>
 <li>单选的时候用true和false来进行判断是否选中就好了</li>
 <li>多选的话给他个value值然后通过v-model绑定的数组内，是否有这个value值进行判断是否选中</li>
@@ -254,10 +256,12 @@
 <p>v-model其实是一个语法糖，它会自动的在元素或者组件上面解析为 :value=”” 和 @input=””</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input :value=<span class="string">"price"</span> @input=<span class="string">"price=$event.target.value"</span>&gt;&lt;<span class="regexp">/input&gt;</span></span><br></pre></td></tr></table></figure>
 
+<a id="more"></a>
+
 <h4 id="拆分了一个value属性"><a href="#拆分了一个value属性" class="headerlink" title="拆分了一个value属性"></a>拆分了一个value属性</h4><ul>
 <li>当在input输入框输入内容时，会自动的触发input事件，更新绑定的name值。</li>
 <li>当name的值通过JavaScript改变时，会更新input的value值<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> <span class="comment">// AddPrice.vue</span></span><br><span class="line"> <span class="comment">// 通过props接受绑定的value参数</span></span><br><span class="line"> &lt;template&gt;</span><br><span class="line"> 	 &lt;div @click=<span class="string">"$emit('input',value + 100 )"</span>&gt;点击加钱&lt;div&gt;</span><br><span class="line">&lt;<span class="regexp">/template&gt;</span></span><br><span class="line"><span class="regexp">&lt;script&gt;</span></span><br><span class="line"><span class="regexp">  export default &#123;</span></span><br><span class="line"><span class="regexp">    props: ['value']</span></span><br><span class="line"><span class="regexp">  &#125;</span></span><br><span class="line"><span class="regexp">&lt;/</span>script&gt;</span><br><span class="line"><span class="comment">// 在父组件中调用</span></span><br><span class="line">&lt;add-price v-model=<span class="string">"price"</span>&gt;&lt;<span class="regexp">/add-price&gt;</span></span><br></pre></td></tr></table></figure>
-<a id="more"></a>
+<!--more-->
 <h4 id="input的checked分为单选和多选"><a href="#input的checked分为单选和多选" class="headerlink" title="input的checked分为单选和多选"></a>input的checked分为单选和多选</h4></li>
 <li>单选的时候用true和false来进行判断是否选中就好了</li>
 <li>多选的话给他个value值然后通过v-model绑定的数组内，是否有这个value值进行判断是否选中</li>

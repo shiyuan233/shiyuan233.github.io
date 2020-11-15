@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="https://shiyuan233.github.io">
   <title>taro注意点 | 十元233的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称在定义文件路径重定向的时候需要在顶部定义一个const path &#x3D; require(‘path’) 具体可搜索博客当你创建一个新的页面时  constructor (props) {  super(props)  this.state &#x3D; { date: new Date() }}(非必要) state可以在页面中直接写s">
+  <meta name="description" content="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称在定义文件路径重定向的时候需要在顶部定义一个const path &#x3D; require(‘path’) 具体可搜索博客">
 <meta property="og:type" content="article">
 <meta property="og:title" content="taro注意点">
 <meta property="og:url" content="https://shiyuan233.github.io/2020/08/14/taro%E5%B0%8F%E7%BB%86%E8%8A%82/index.html">
 <meta property="og:site_name" content="十元233的博客">
-<meta property="og:description" content="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称在定义文件路径重定向的时候需要在顶部定义一个const path &#x3D; require(‘path’) 具体可搜索博客当你创建一个新的页面时  constructor (props) {  super(props)  this.state &#x3D; { date: new Date() }}(非必要) state可以在页面中直接写s">
+<meta property="og:description" content="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称在定义文件路径重定向的时候需要在顶部定义一个const path &#x3D; require(‘path’) 具体可搜索博客">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-08-14T06:36:54.000Z">
 <meta property="article:modified_time" content="2020-08-14T06:36:54.000Z">
@@ -227,7 +227,12 @@
     
     
     <h2 id="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"><a href="#进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称" class="headerlink" title="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"></a>进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称</h2><h2 id="在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’"><a href="#在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’" class="headerlink" title="在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)"></a>在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)</h2><ul>
-<li>具体可搜索博客<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2>  constructor (props) {<br>  super(props)<br>  this.state = { date: new Date() }}(非必要)</li>
+<li>具体可搜索博客</li>
+</ul>
+  <a id="more"></a>
+<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2><pre><code>constructor (props) {
+super(props)
+this.state = { date: new Date() }}(非必要)</code></pre><ul>
 <li>state可以在页面中直接写state={}<h2 id="能够在布局中掺杂js语法-和js区别"><a href="#能够在布局中掺杂js语法-和js区别" class="headerlink" title="能够在布局中掺杂js语法(和js区别)"></a>能够在布局中掺杂js语法(和js区别)</h2><h2 id="状态变量定义在state对象中，在render这个方法中可以直接引用"><a href="#状态变量定义在state对象中，在render这个方法中可以直接引用" class="headerlink" title="状态变量定义在state对象中，在render这个方法中可以直接引用"></a>状态变量定义在state对象中，在render这个方法中可以直接引用</h2></li>
 <li>通过this.state.属性名来获取你定义在state对象中的属性<h2 id="方法直接定义，如果你想调用的话也是在render中可以直接引用"><a href="#方法直接定义，如果你想调用的话也是在render中可以直接引用" class="headerlink" title="方法直接定义，如果你想调用的话也是在render中可以直接引用"></a>方法直接定义，如果你想调用的话也是在render中可以直接引用</h2></li>
 <li>onClick={this.方法名}来调用方法</li>
@@ -239,7 +244,7 @@
 <li><a href="https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F" target="_blank" rel="noopener">https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F</a><h2 id="修改state中的值-其实和微信小程序中修改data中的值很类似"><a href="#修改state中的值-其实和微信小程序中修改data中的值很类似" class="headerlink" title="修改state中的值 其实和微信小程序中修改data中的值很类似"></a>修改state中的值 其实和微信小程序中修改data中的值很类似</h2><ul>
 <li>一定要使用this.setState({属性名：属性值})进行更改</li>
 <li>其次，这个this.setState({})这个方法，修改值是异步进行的。意思就是说你修改了值可能不会立刻能够得到修改的值，如果你想打印出修改后的值需要使用它的第二个参数传入一个callback 如下：<ul>
-<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code><a id="more"></a>
+<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code><!--more-->
 <h2 id="taro-引入webpack-bundle-analyzer可视化打包大小插件"><a href="#taro-引入webpack-bundle-analyzer可视化打包大小插件" class="headerlink" title="taro 引入webpack-bundle-analyzer可视化打包大小插件"></a>taro 引入webpack-bundle-analyzer可视化打包大小插件</h2></li>
 </ul>
 </li>
@@ -254,7 +259,12 @@
 
     <!-- 
     <h2 id="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"><a href="#进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称" class="headerlink" title="进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称"></a>进行模板创建时，默认名字就叫index这样在你引用时，可以少写一个文件名称</h2><h2 id="在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’"><a href="#在定义文件路径重定向的时候需要在顶部定义一个const-path-require-‘path’" class="headerlink" title="在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)"></a>在定义文件路径重定向的时候需要在顶部定义一个const path = require(‘path’)</h2><ul>
-<li>具体可搜索博客<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2>  constructor (props) {<br>  super(props)<br>  this.state = { date: new Date() }}(非必要)</li>
+<li>具体可搜索博客</li>
+</ul>
+  <a id="more"></a>
+<h2 id="当你创建一个新的页面时"><a href="#当你创建一个新的页面时" class="headerlink" title="当你创建一个新的页面时"></a>当你创建一个新的页面时</h2><pre><code>constructor (props) {
+super(props)
+this.state = { date: new Date() }}(非必要)</code></pre><ul>
 <li>state可以在页面中直接写state={}<h2 id="能够在布局中掺杂js语法-和js区别"><a href="#能够在布局中掺杂js语法-和js区别" class="headerlink" title="能够在布局中掺杂js语法(和js区别)"></a>能够在布局中掺杂js语法(和js区别)</h2><h2 id="状态变量定义在state对象中，在render这个方法中可以直接引用"><a href="#状态变量定义在state对象中，在render这个方法中可以直接引用" class="headerlink" title="状态变量定义在state对象中，在render这个方法中可以直接引用"></a>状态变量定义在state对象中，在render这个方法中可以直接引用</h2></li>
 <li>通过this.state.属性名来获取你定义在state对象中的属性<h2 id="方法直接定义，如果你想调用的话也是在render中可以直接引用"><a href="#方法直接定义，如果你想调用的话也是在render中可以直接引用" class="headerlink" title="方法直接定义，如果你想调用的话也是在render中可以直接引用"></a>方法直接定义，如果你想调用的话也是在render中可以直接引用</h2></li>
 <li>onClick={this.方法名}来调用方法</li>
@@ -266,7 +276,7 @@
 <li><a href="https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F" target="_blank" rel="noopener">https://taro-docs.jd.com/taro/docs/2.2.8/tutorial#%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F</a><h2 id="修改state中的值-其实和微信小程序中修改data中的值很类似"><a href="#修改state中的值-其实和微信小程序中修改data中的值很类似" class="headerlink" title="修改state中的值 其实和微信小程序中修改data中的值很类似"></a>修改state中的值 其实和微信小程序中修改data中的值很类似</h2><ul>
 <li>一定要使用this.setState({属性名：属性值})进行更改</li>
 <li>其次，这个this.setState({})这个方法，修改值是异步进行的。意思就是说你修改了值可能不会立刻能够得到修改的值，如果你想打印出修改后的值需要使用它的第二个参数传入一个callback 如下：<ul>
-<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code><a id="more"></a>
+<li><code>this.setState({属性名：属性值},(state)=&gt;{在这里面可以拿到state修改之后的值})</code><!--more-->
 <h2 id="taro-引入webpack-bundle-analyzer可视化打包大小插件"><a href="#taro-引入webpack-bundle-analyzer可视化打包大小插件" class="headerlink" title="taro 引入webpack-bundle-analyzer可视化打包大小插件"></a>taro 引入webpack-bundle-analyzer可视化打包大小插件</h2></li>
 </ul>
 </li>
